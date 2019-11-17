@@ -4,10 +4,115 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://use.fontawesome.com/358a83a1a1.js"></script>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Ryan Untalan</title>
   </head>
   <body>
-    <h1>hello! My name is Ryan Untalan.</h1>
+    <header>
+      <ul>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link contact">
+            Contact
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="resources/Resume.pdf" target="_blank" class="nav-link">
+            Resume
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            About
+          </a>
+        </li>
+        <li style="float: left" class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-home fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <main id="home">
+      <h1 class="lg-heading">
+        Hello, I'm Ryan Untalan
+      </h1>
+      <h2 class="sm-heading">
+        Psychology Student & Web Developer
+      </h2>
+
+      <h2 class="lg-heading portfolio-title">Here are some of my projects:</h2>
+
+      <div class="portfolio">
+        <div class="container">
+          <a href="https://ryuntalan.github.io/traffeco/">
+            <img
+              class="project"
+              src="img/traffeco.jpg"
+              alt="hackathon project"
+            />
+            <div class="overlay">
+              <div class="text">
+                <strong>Website</strong><br />
+                Optimizing the mobility ecosystem
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="container">
+          <a href="resources/alluminate.pdf" target="_blank">
+            <img
+              class="project"
+              src="img/work-alluminate.png"
+              alt="phone case project"
+            />
+            <div class="overlay">
+              <div class="text">
+                <strong>Product Design</strong><br />
+                A case that protects <br />
+                your phone both externally and internally
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="container">
+          <a href="resources/researchpaper.pdf" target="_blank">
+            <img
+              class="project"
+              src="img/capsaicin.png"
+              alt="research project"
+            />
+            <div class="overlay">
+              <div class="text">
+                <strong>Research Project</strong><br />
+                Exploring the effects of capsaicin on sociability
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="container">
+          <a href="https://ryuntalan.github.io/parallax-japan/">
+            <img class="project" src="img/japan.jpg" alt="parallax project" />
+            <div class="overlay">
+              <div class="text">
+                <strong>Website</strong> <br />
+                Family trip to Japan!
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

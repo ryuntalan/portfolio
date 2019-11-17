@@ -1,0 +1,81 @@
+//Widescreens
+@include mediaXl {
+  .bio-img {
+    position: relative;
+    left: 120px;
+  }
+}
+// Desktops & Laptops
+@include mediaLg {
+  .bio-img {
+    position: relative;
+    left: 110px;
+  }
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+  .about-info {
+    grid-template-areas:
+      "bio-img"
+      "bio";
+
+    grid-template-columns: 1fr;
+  }
+
+  .bio-img {
+    margin: auto;
+    width: 35%;
+  }
+
+  .bio {
+    margin: auto;
+  }
+
+  .form-control {
+    width: 400px;
+  }
+}
+
+// Smartphones
+@include mediaSm {
+  .form-control {
+    width: 300px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    &.lg-heading {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+    }
+
+    &.sm-heading {
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .portfolio img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+  }
+
+  .text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

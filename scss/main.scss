@@ -1,6 +1,252 @@
-$primary-color: #000;
+// remember to npm run sass to compile scss to css
+@import "config";
+
+main {
+  //used for stick footers
+  min-height: calc(100vh - 60px);
+}
 
 body {
   background: $primary-color;
-  color: #fff;
+  color: $text-color;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  line-height: 1.5;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+//navbar
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $primary-color;
+  font-weight: 300;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: $text-color;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+  &.contact {
+    margin-left: -5px;
+  }
+}
+
+li a:hover {
+  color: $secondary-color;
+  background-color: rgba(250, 246, 246, 0.829);
+}
+
+.nav-item {
+  &.current > a {
+    color: $secondary-color;
+  }
+}
+
+//Headings
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 300;
+  text-align: center;
+
+  &.lg-heading {
+    margin-top: 2rem;
+    font-size: 1.7rem;
+  }
+
+  &.sm-heading {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+//Portfolio
+
+.portfolio {
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio img {
+  width: 450px;
+  height: 450px;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  width: 450px;
+  height: 450px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: $text-color;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+//icons
+.icons a {
+  color: $text-color;
+  text-decoration: none;
+  padding: 5px;
+
+  &:hover {
+    color: $secondary-color;
+    @include easeOut();
+  }
+}
+
+.icons {
+  width: 100%;
+  text-align: center;
+}
+
+.icons .fa {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+//About
+
+#about h2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.about-info {
+  display: grid;
+  grid-template-areas: "bio-img bio";
+  grid-template-columns: 1fr 1fr;
+
+  .bio-img {
+    grid-area: bio-img;
+    margin: auto;
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+    border: $secondary-color 2px solid;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.2rem;
+    width: 70%;
+    line-height: 32px;
+  }
+
+  .weight {
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  .contact-btn {
+    text-decoration: none;
+  }
+  .btn {
+    border: 1px solid #f1f1f1;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 32px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+    &:hover {
+      background-color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+}
+
+//Contact
+
+#contact h2 {
+  margin-top: 50px;
+}
+form {
+  text-align: center;
+  margin-top: 50px;
+  @include easeInOut();
+}
+
+.form-control {
+  width: 600px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $text-color;
+  color: $text-color;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background-color: $secondary-color;
+  border-color: transparent;
+  font-size: 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: darken($secondary-color, 2);
+    cursor: pointer;
+  }
+}
+
+// Footer
+#main-footer {
+  text-align: center;
+  background-color: darken($primary-color, 2);
+  font-size: 14px;
+  padding: 1rem;
+  color: $text-color;
+  height: 60px;
+}
+
+@import "mobile";

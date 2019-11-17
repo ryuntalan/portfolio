@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://use.fontawesome.com/358a83a1a1.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li class="nav-item current">
+          <a href="contact.html" class="nav-link contact">
+            Contact
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="resources/Resume.pdf" target="_blank" class="nav-link">
+            Resume
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">
+            About
+          </a>
+        </li>
+        <li style="float: left" class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fa fa-home fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+
+    <main id="contact">
+      <h2 class="lg-heading">Say Hello!</h2>
+
+      <div class="contact-form">
+        <form
+          id="contact-form"
+          method="POST"
+          action="https://formspree.io/xleeppkp"
+        >
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            placeholder="Your Name"
+            required
+          /><br />
+
+          <input
+            name="_replyto"
+            type="text"
+            class="form-control"
+            placeholder="Your Email"
+            required
+          /><br />
+
+          <textarea
+            name="message"
+            class="form-control"
+            placeholder="Message"
+            rows="4"
+            required
+          ></textarea>
+          <br />
+
+          <input
+            type="submit"
+            class="form-control submit"
+            value="Send Message"
+          />
+        </form>
+      </div>
+
+      <div class="icons">
+        <a href="mailto:untalan.ryan@gmail.com">
+          <i class="fa fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ryan-untalan/" target="_blank">
+          <i class="fa fa-linkedin fa-2x"></i>
+        </a>
+
+        <a href="https://github.com/ryuntalan" target="_blank">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+
+        <a href="https://www.facebook.com/ryuntalan" target="_blank">
+          <i class="fa fa-facebook fa-2x"></i>
+        </a>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
