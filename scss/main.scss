@@ -227,14 +227,14 @@ input {
 }
 
 form .submit {
-  background-color: $secondary-color;
+  background-color: #c6cff6;
   border-color: transparent;
   font-size: 20px;
   margin-bottom: 30px;
   border-radius: 5px;
 
   &:hover {
-    background-color: darken($secondary-color, 2);
+    background-color: #b5c0f2;
     cursor: pointer;
   }
 }
