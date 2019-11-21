@@ -174,13 +174,13 @@ input {
   height: 45px; }
 
 form .submit {
-  background-color: #5680e9;
+  background-color: #c6cff6;
   border-color: transparent;
   font-size: 20px;
   margin-bottom: 30px;
   border-radius: 5px; }
   form .submit:hover {
-    background-color: #4d79e8;
+    background-color: #b5c0f2;
     cursor: pointer; }
 
 #main-footer {
