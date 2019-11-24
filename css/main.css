@@ -6,9 +6,9 @@ body {
   color: #333;
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-family: "Helvetica Neue", "Segoe UI", Tahoma, Verdana, sans-serif;
   line-height: 1.5;
-  font-weight: 100; }
+  font-weight: 350; }
 
 * {
   box-sizing: border-box; }
@@ -19,7 +19,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: #fafafa;
-  font-family: "Segoe UI", Tahoma, Verdana, sans-serif; }
+  font-family: "Helvetica Neue", "Segoe UI", Tahoma, Verdana, sans-serif; }
 
 li {
   float: right; }
@@ -30,7 +30,8 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-weight: 100; }
+  font-weight: 350;
+  transition: all 0.4s ease-out; }
   li a.contact {
     margin-left: -5px; }
 
@@ -52,13 +53,13 @@ h3 {
   h3.lg-heading {
     margin-top: 2rem;
     font-size: 1.7rem;
-    font-weight: lighter; }
+    font-weight: 350; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     font-size: 1rem;
     margin-bottom: 2rem;
-    font-weight: lighter; }
+    font-weight: 250; }
 
 .portfolio {
   width: 100%;
@@ -94,11 +95,15 @@ h3 {
 .text {
   color: white;
   font-size: 20px;
+  font-weight: 200;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center; }
+
+strong {
+  font-weight: 400; }
 
 .icons a {
   color: #333;
@@ -106,7 +111,7 @@ h3 {
   padding: 5px; }
   .icons a:hover {
     color: #5680e9;
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
 
 .icons {
   width: 100%;
@@ -118,7 +123,7 @@ h3 {
 
 #about h2 {
   margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
 
 .about-info {
   display: grid;
@@ -129,13 +134,15 @@ h3 {
     margin: auto;
     max-width: 40%;
     height: auto;
-    border-radius: 50%;
-    border: #5680e9 2px solid; }
+    border-radius: 2%;
+    border: #5680e9 1px solid;
+    margin-right: 190px; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.1rem;
     width: 70%;
-    line-height: 32px; }
+    line-height: 32px;
+    margin-top: 30px; }
   .about-info .weight {
     color: #333;
     text-decoration: none; }
@@ -150,7 +157,8 @@ h3 {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    margin: auto; }
+    margin: auto;
+    margin-bottom: 30px; }
     .about-info .btn:hover {
       background-color: #8ca8ed;
       cursor: pointer; }
@@ -171,7 +179,8 @@ form {
   border-bottom: 1px solid #333;
   color: #333;
   font-size: 15px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  font-weight: 250; }
 
 input {
   height: 45px; }
@@ -207,7 +216,7 @@ form .submit {
     right: 35px;
     top: 35px;
     cursor: pointer;
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu-btn:hover .btn-line {
       background: #5680e9; }
     .menu-btn .btn-line {
@@ -215,7 +224,7 @@ form .submit {
       height: 3px;
       margin: 0 0 5px 0;
       background: #333;
-      transition: all 0.5s ease-out; }
+      transition: all 0.4s ease-out; }
     .menu-btn.close {
       transform: rotate(180deg); }
       .menu-btn.close .btn-line:nth-child(1) {
@@ -233,7 +242,7 @@ form .submit {
     .menu.show {
       visibility: visible;
       background: #f2f2f2;
-      transition: all 0.5s ease-out; }
+      transition: all 0.4s ease-out; }
     .menu-nav {
       display: flex;
       flex-flow: column-reverse wrap;
@@ -247,7 +256,7 @@ form .submit {
       overflow: hidden;
       background: #f2f2f2;
       transform: translate3d(0, -120%, 0);
-      transition: all 0.5s ease-out; }
+      transition: all 0.4s ease-out; }
       .menu-nav.show {
         transform: translate3d(0, 0, 0); }
   li a {
@@ -262,7 +271,7 @@ form .submit {
     background-color: #f2f2f2; }
   .nav-item {
     transform: translate3d(550px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .nav-item.show {
       transform: translate3d(0, 0, 0); }
   .nav-item:nth-child(1) {
@@ -275,7 +284,11 @@ form .submit {
     transition-delay: 0.32s; }
   .bio-img {
     position: relative;
-    left: 110px; } }
+    bottom: 25px;
+    left: 140px;
+    width: 50%; }
+  .bio p {
+    font-size: 15px; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn {
@@ -284,7 +297,7 @@ form .submit {
     right: 35px;
     top: 35px;
     cursor: pointer;
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu-btn:hover .btn-line {
       background: #5680e9; }
     .menu-btn .btn-line {
@@ -292,7 +305,7 @@ form .submit {
       height: 3px;
       margin: 0 0 5px 0;
       background: #333;
-      transition: all 0.5s ease-out; }
+      transition: all 0.4s ease-out; }
     .menu-btn.close {
       transform: rotate(180deg); }
       .menu-btn.close .btn-line:nth-child(1) {
@@ -310,7 +323,7 @@ form .submit {
     .menu.show {
       visibility: visible;
       background: #f2f2f2;
-      transition: all 0.5s ease-out; }
+      transition: all 0.4s ease-out; }
     .menu-nav {
       display: flex;
       flex-flow: column-reverse wrap;
@@ -324,7 +337,7 @@ form .submit {
       overflow: hidden;
       background: #f2f2f2;
       transform: translate3d(0, -120%, 0);
-      transition: all 0.5s ease-out; }
+      transition: all 0.4s ease-out; }
       .menu-nav.show {
         transform: translate3d(0, 0, 0); }
   li a {
@@ -339,7 +352,7 @@ form .submit {
     background-color: #f2f2f2; }
   .nav-item {
     transform: translate3d(550px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .nav-item.show {
       transform: translate3d(0, 0, 0); }
   .nav-item:nth-child(1) {
@@ -353,11 +366,12 @@ form .submit {
   .about-info {
     grid-template-areas: "bio-img" "bio";
     grid-template-columns: 1fr; }
-  .bio-img {
-    margin: auto;
-    width: 35%; }
-  .bio {
+  .about-info .bio-img {
+    margin-right: auto; }
+  .about-info .bio {
     margin: auto; }
+  .bio p {
+    font-size: 14px; }
   .form-control {
     width: 400px; } }
 
@@ -368,7 +382,7 @@ form .submit {
     right: 35px;
     top: 35px;
     cursor: pointer;
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .menu-btn:hover .btn-line {
       background: #5680e9; }
     .menu-btn .btn-line {
@@ -376,7 +390,7 @@ form .submit {
       height: 3px;
       margin: 0 0 5px 0;
       background: #333;
-      transition: all 0.5s ease-out; }
+      transition: all 0.4s ease-out; }
     .menu-btn.close {
       transform: rotate(180deg); }
       .menu-btn.close .btn-line:nth-child(1) {
@@ -394,7 +408,7 @@ form .submit {
     .menu.show {
       visibility: visible;
       background: #f2f2f2;
-      transition: all 0.5s ease-out; }
+      transition: all 0.4s ease-out; }
     .menu-nav {
       display: flex;
       flex-flow: column-reverse wrap;
@@ -408,7 +422,7 @@ form .submit {
       overflow: hidden;
       background: #f2f2f2;
       transform: translate3d(0, -120%, 0);
-      transition: all 0.5s ease-out; }
+      transition: all 0.4s ease-out; }
       .menu-nav.show {
         transform: translate3d(0, 0, 0); }
   li a {
@@ -423,7 +437,7 @@ form .submit {
     background-color: #f2f2f2; }
   .nav-item {
     transform: translate3d(550px, 0, 0);
-    transition: all 0.5s ease-out; }
+    transition: all 0.4s ease-out; }
     .nav-item.show {
       transform: translate3d(0, 0, 0); }
   .nav-item:nth-child(1) {
@@ -461,4 +475,10 @@ form .submit {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; } }
+    text-align: center; }
+  .bio p {
+    font-size: 14px; }
+  .about-info .bio {
+    margin: auto; }
+  .about-info .bio-img {
+    margin-right: auto; } }
