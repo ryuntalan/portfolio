@@ -7,6 +7,8 @@
 }
 // Desktops & Laptops
 @include mediaLg {
+  @import "menu";
+
   .bio-img {
     position: relative;
     left: 110px;
@@ -15,6 +17,8 @@
 
 // Tablets & Small Laptops
 @include mediaMd {
+  @import "menu";
+
   .about-info {
     grid-template-areas:
       "bio-img"
@@ -39,6 +43,8 @@
 
 // Smartphones
 @include mediaSm {
+  @import "menu";
+
   .form-control {
     width: 300px;
   }
