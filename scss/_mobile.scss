@@ -5,6 +5,7 @@
     left: 120px;
   }
 }
+
 // Desktops & Laptops
 @include mediaLg {
   @import "menu";
