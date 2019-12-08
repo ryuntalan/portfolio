@@ -3,6 +3,7 @@
   .bio-img {
     position: relative;
     left: 120px;
+    width: 500px;
   }
 }
 
@@ -10,11 +11,28 @@
 @include mediaLg {
   @import "menu";
 
+  .about-info {
+    margin-top: 100px;
+
+    .bio {
+      width: 80%;
+    }
+
+    .bio-img {
+      position: relative;
+      left: 140px;
+      width: 60%;
+    }
+  }
+
+  #about h2 {
+    font-size: 23px;
+    margin-bottom: -5px;
+  }
+
   .bio-img {
     position: relative;
-    bottom: 25px;
     left: 140px;
-    width: 50%;
   }
 
   .bio {
@@ -28,6 +46,10 @@
 @include mediaMd {
   @import "menu";
 
+  #about h2 {
+    text-align: center;
+  }
+
   .about-info {
     grid-template-areas:
       "bio-img"
@@ -38,10 +60,13 @@
 
   .about-info .bio-img {
     margin-right: auto;
+    margin-top: 70px;
+    width: 40%;
   }
 
   .about-info .bio {
     margin: auto;
+    width: 90%;
   }
 
   .bio {
@@ -58,6 +83,13 @@
 // Smartphones
 @include mediaSm {
   @import "menu";
+
+  #about h2 {
+    font-size: 19px;
+    margin-bottom: -5px;
+    font-weight: 600;
+    text-align: center;
+  }
 
   .form-control {
     width: 300px;
