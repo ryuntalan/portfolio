@@ -77,6 +77,18 @@
   }
 }
 
+.nav-logo {
+  margin: 0px 0px 0px 0px;
+}
+
+.nav-btn {
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  flex-flow: column-reverse wrap;
+  align-items: center;
+  justify-content: center;
+}
+
 li a {
   display: block;
   color: $text-color;

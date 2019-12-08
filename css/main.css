@@ -6,20 +6,19 @@ body {
   color: #333;
   height: 100%;
   margin: 0;
-  font-family: "Helvetica Neue", "Segoe UI", Tahoma, Verdana, sans-serif;
   line-height: 1.5;
-  font-weight: 350; }
+  font-weight: 400; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Muli", "Raleway", "Helvetica Neue", "Segoe UI", Tahoma, Verdana, sans-serif; }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #fafafa;
-  font-family: "Helvetica Neue", "Segoe UI", Tahoma, Verdana, sans-serif; }
+  background-color: #fafafa; }
 
 li {
   float: right; }
@@ -30,17 +29,26 @@ li a {
   text-align: center;
   padding: 14px 18px;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
   transition: all 0.3s ease-out; }
   li a.contact {
     margin-left: -5px; }
 
 li a:hover {
-  color: #5680e9;
-  background-color: rgba(250, 246, 246, 0.829); }
+  text-decoration: underline; }
+
+.nav-btn {
+  margin: 8px 100px 0px 0px; }
+  .nav-btn a:hover {
+    color: #5680e9; }
 
 .nav-item.current > a {
   color: #5680e9; }
+
+.nav-logo {
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 100px; }
 
 h1,
 h2,
@@ -53,7 +61,7 @@ h3 {
   h3.lg-heading {
     margin-top: 2rem;
     font-size: 1.7rem;
-    font-weight: 350; }
+    font-weight: 400; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
@@ -122,26 +130,28 @@ strong {
   vertical-align: middle; }
 
 #about h2 {
-  margin-top: 50px;
-  margin-bottom: 30px; }
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: left; }
 
 .about-info {
   display: grid;
   grid-template-areas: "bio-img bio";
-  grid-template-columns: 1fr 1fr; }
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px; }
   .about-info .bio-img {
     grid-area: bio-img;
     margin: auto;
-    max-width: 40%;
+    width: 350px;
     height: auto;
-    border-radius: 2%;
-    border: #5680e9 1px solid;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
     margin-right: 190px; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.1rem;
-    width: 70%;
-    line-height: 32px;
+    font-weight: 300;
+    width: 500px;
+    line-height: 37px;
     margin-top: 30px; }
   .about-info .weight {
     color: #333;
@@ -152,7 +162,8 @@ strong {
     border: 1px solid #f1f1f1;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1rem;
+    font-weight: 400;
     padding: 15px 32px;
     border-radius: 10px;
     display: flex;
@@ -189,7 +200,7 @@ form .submit {
   background-color: #8ca8ed;
   border-color: transparent;
   color: #000000;
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 30px;
   border-radius: 5px; }
   form .submit:hover {
@@ -207,7 +218,8 @@ form .submit {
 @media screen and (min-width: 1171px) {
   .bio-img {
     position: relative;
-    left: 120px; } }
+    left: 120px;
+    width: 500px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .menu-btn {
@@ -259,6 +271,14 @@ form .submit {
       transition: all 0.3s ease-out; }
       .menu-nav.show {
         transform: translate3d(0, 0, 0); }
+  .nav-logo {
+    margin: 0px 0px 0px 0px; }
+  .nav-btn {
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+    justify-content: center; }
   li a {
     display: block;
     color: #333;
@@ -282,11 +302,20 @@ form .submit {
     transition-delay: 0.24s; }
   .nav-item:nth-child(4) {
     transition-delay: 0.32s; }
+  .about-info {
+    margin-top: 100px; }
+    .about-info .bio {
+      width: 80%; }
+    .about-info .bio-img {
+      position: relative;
+      left: 140px;
+      width: 60%; }
+  #about h2 {
+    font-size: 23px;
+    margin-bottom: -5px; }
   .bio-img {
     position: relative;
-    bottom: 25px;
-    left: 140px;
-    width: 50%; }
+    left: 140px; }
   .bio p {
     font-size: 15px; } }
 
@@ -340,6 +369,14 @@ form .submit {
       transition: all 0.3s ease-out; }
       .menu-nav.show {
         transform: translate3d(0, 0, 0); }
+  .nav-logo {
+    margin: 0px 0px 0px 0px; }
+  .nav-btn {
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+    justify-content: center; }
   li a {
     display: block;
     color: #333;
@@ -363,13 +400,18 @@ form .submit {
     transition-delay: 0.24s; }
   .nav-item:nth-child(4) {
     transition-delay: 0.32s; }
+  #about h2 {
+    text-align: center; }
   .about-info {
     grid-template-areas: "bio-img" "bio";
     grid-template-columns: 1fr; }
   .about-info .bio-img {
-    margin-right: auto; }
+    margin-right: auto;
+    margin-top: 70px;
+    width: 40%; }
   .about-info .bio {
-    margin: auto; }
+    margin: auto;
+    width: 90%; }
   .bio p {
     font-size: 14px; }
   .form-control {
@@ -425,6 +467,14 @@ form .submit {
       transition: all 0.3s ease-out; }
       .menu-nav.show {
         transform: translate3d(0, 0, 0); }
+  .nav-logo {
+    margin: 0px 0px 0px 0px; }
+  .nav-btn {
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    align-items: center;
+    justify-content: center; }
   li a {
     display: block;
     color: #333;
@@ -448,6 +498,11 @@ form .submit {
     transition-delay: 0.24s; }
   .nav-item:nth-child(4) {
     transition-delay: 0.32s; }
+  #about h2 {
+    font-size: 19px;
+    margin-bottom: -5px;
+    font-weight: 600;
+    text-align: center; }
   .form-control {
     width: 300px; }
   h1.lg-heading,

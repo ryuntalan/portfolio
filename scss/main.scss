@@ -11,13 +11,14 @@ body {
   color: $text-color;
   height: 100%;
   margin: 0;
-  font-family: "Helvetica Neue", "Segoe UI", Tahoma, Verdana, sans-serif;
   line-height: 1.5;
-  font-weight: 350;
+  font-weight: 400;
 }
 
 * {
   box-sizing: border-box;
+  font-family: "Muli", "Raleway", "Helvetica Neue", "Segoe UI", Tahoma, Verdana,
+    sans-serif;
 }
 
 //navbar
@@ -28,7 +29,6 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: $primary-color;
-  font-family: "Helvetica Neue", "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 li {
@@ -41,7 +41,7 @@ li a {
   text-align: center;
   padding: 14px 18px;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
   @include easeOut();
 
   &.contact {
@@ -50,14 +50,26 @@ li a {
 }
 
 li a:hover {
-  color: $secondary-color;
-  background-color: rgba(250, 246, 246, 0.829);
+  text-decoration: underline;
+}
+
+.nav-btn {
+  margin: 8px 100px 0px 0px;
+  a:hover {
+    color: $secondary-color;
+  }
 }
 
 .nav-item {
   &.current > a {
     color: $secondary-color;
   }
+}
+
+.nav-logo {
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 100px;
 }
 
 //Headings
@@ -71,7 +83,7 @@ h3 {
   &.lg-heading {
     margin-top: 2rem;
     font-size: 1.7rem;
-    font-weight: 350;
+    font-weight: 400;
   }
 
   &.sm-heading {
@@ -159,29 +171,31 @@ strong {
 //About
 
 #about h2 {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 30px;
+  text-align: left;
 }
 .about-info {
   display: grid;
   grid-template-areas: "bio-img bio";
   grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
 
   .bio-img {
     grid-area: bio-img;
     margin: auto;
-    max-width: 40%;
+    width: 350px;
     height: auto;
-    border-radius: 2%;
-    border: $secondary-color 1px solid;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
     margin-right: 190px;
   }
 
   .bio {
     grid-area: bio;
     font-size: 1.1rem;
-    width: 70%;
-    line-height: 32px;
+    font-weight: 300;
+    width: 500px;
+    line-height: 37px;
     margin-top: 30px;
   }
 
@@ -197,7 +211,8 @@ strong {
     border: 1px solid #f1f1f1;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1rem;
+    font-weight: 400;
     padding: 15px 32px;
     border-radius: 10px;
     display: flex;
@@ -243,7 +258,7 @@ form .submit {
   background-color: #8ca8ed;
   border-color: transparent;
   color: #000000;
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 30px;
   border-radius: 5px;
 
