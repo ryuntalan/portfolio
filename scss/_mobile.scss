@@ -5,6 +5,15 @@
     left: 120px;
     width: 500px;
   }
+
+  .fa-angle-down {
+    font-size: 50px;
+    color: rgb(77, 77, 77);
+    z-index: 2;
+    position: absolute;
+    top: 91%;
+    left: 50%;
+  }
 }
 
 // Desktops & Laptops
@@ -39,6 +48,10 @@
     & p {
       font-size: 15px;
     }
+  }
+
+  .fa-angle-down {
+    display: none;
   }
 }
 
@@ -107,6 +120,10 @@
       font-size: 0.8rem;
       margin-bottom: 1rem;
     }
+  }
+
+  .fa-angle-down {
+    display: none;
   }
 
   // Portfolio sass
