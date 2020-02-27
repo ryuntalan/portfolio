@@ -249,6 +249,22 @@ strong {
   }
 }
 
+//Process
+
+.process-desc {
+  font-size: 18px;
+  width: 700px;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: left;
+  border: 2px solid $text-color;
+  border-radius: 5px;
+}
+
+.thinking-circle {
+  border-radius: 50%;
+}
+
 //Contact
 
 #contact h2 {
