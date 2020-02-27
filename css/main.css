@@ -191,6 +191,18 @@ strong {
       background-color: #8ca8ed;
       cursor: pointer; }
 
+.process-desc {
+  font-size: 18px;
+  width: 700px;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: left;
+  border: 2px solid #333;
+  border-radius: 5px; }
+
+.thinking-circle {
+  border-radius: 50%; }
+
 #contact h2 {
   margin-top: 50px; }
 
