@@ -261,14 +261,21 @@ strong {
 //Process
 
 .process-desc {
-  font-size: 18px;
-  width: 700px;
-  padding: 20px;
+  width: 720px;
+  padding: 15px;
+  line-height: 30px;
   margin: 20px auto;
   text-align: left;
   border: 2px solid rgba(51, 51, 51, 0.3);
   border-radius: 5px;
 }
+
+.process-title {
+  font-weight: 600;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+
 .design-example {
   width: 1000px;
   margin: 20px auto;
@@ -282,7 +289,8 @@ strong {
 }
 
 .example-title {
-  text-align: left;
+  text-align: center;
+  margin: 45px 0px 5px 0px;
   font-size: 40px;
   font-weight: 600;
 }
@@ -379,10 +387,10 @@ strong {
   text-decoration: none;
   border: 2px solid rgba(86, 128, 233, 0.7);
   border-radius: 5px;
-  width: 500px;
+  width: 275px;
   display: flex;
   justify-content: center;
-  margin: 20px auto;
+  margin: 10px auto;
 
   &:hover {
     background-color: #7396ed;
