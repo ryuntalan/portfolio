@@ -725,4 +725,63 @@ form .submit {
   .about-info .bio {
     margin: auto; }
   .about-info .bio-img {
-    margin-right: auto; } }
+    margin-right: auto; }
+  .design-example {
+    width: 250px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .process-title {
+    margin-top: 60px;
+    font-size: 24px; }
+  .process-desc {
+    font-size: 14px;
+    width: 250px; }
+  .example-title {
+    font-size: 20px;
+    width: 255px;
+    display: flex;
+    justify-content: center; }
+  .histobox-logo {
+    width: 200px; }
+  .example-subheads {
+    text-align: center;
+    margin-top: 30px; }
+  .section-titles {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px; }
+  .section-desc {
+    font-size: 14px; }
+  .design-flow {
+    width: 275px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto; }
+  .line-break {
+    margin-top: 20px;
+    width: 250px; }
+  .persona-img {
+    width: 300px; }
+  .PM-img-sec {
+    flex-direction: column; }
+  .matrix-img {
+    width: 250px;
+    margin: 10px 0px;
+    justify-content: center; }
+  .sitemap-img {
+    width: 250px; }
+  .adobexd {
+    flex-direction: column; }
+  .adobexd-img {
+    width: 250px;
+    margin: 10px 0px; }
+  .adobe-link {
+    font-size: 18px; }
+  .thank-you {
+    font-size: 20px;
+    margin-bottom: 300px; }
+  #mybtn {
+    margin-bottom: 100px; } }
