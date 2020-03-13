@@ -170,8 +170,7 @@ strong {
 .about-info {
   display: grid;
   grid-template-areas: "bio-img bio";
-  grid-template-columns: 1fr 1fr;
-  margin-top: 20px; }
+  grid-template-columns: 1fr 1fr; }
   .about-info .bio-img {
     grid-area: bio-img;
     margin: auto;
