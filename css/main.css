@@ -405,7 +405,10 @@ form {
   font-weight: 250; }
 
 input {
-  height: 45px; }
+  height: 45px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 form .submit {
   background-color: #8ca8ed;
@@ -760,23 +763,20 @@ form .submit {
   .about-info .bio-img {
     margin-right: auto; }
   .design-example {
-    width: 250px;
+    width: 320px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  .process-title {
-    margin-top: 60px;
-    font-size: 24px; }
-  .process-desc {
-    font-size: 14px;
-    width: 250px; }
   .example-title {
     font-size: 20px;
     width: 255px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px; }
   .histobox-logo {
+    margin-top: 50px;
     width: 200px; }
   .example-subheads {
     text-align: center;
@@ -817,4 +817,15 @@ form .submit {
     font-size: 20px;
     margin-bottom: 300px; }
   #mybtn {
-    margin-bottom: 100px; } }
+    margin-bottom: 100px; }
+  .danceparty-header-img {
+    width: 250px; }
+  .nick-styl {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    margin: auto; }
+  .dance-video {
+    width: 320px; }
+  .nick-sitemap {
+    width: 320px; } }

@@ -506,6 +506,9 @@ form {
 
 input {
   height: 45px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 form .submit {
