@@ -34,7 +34,7 @@ li a {
   display: block;
   color: #333;
   text-align: center;
-  padding: 14px 18px;
+  padding: 20px 18px;
   text-decoration: none;
   font-weight: 300;
   transition: all 0.3s ease-out; }
@@ -53,28 +53,52 @@ li a:hover {
   color: #5680e9; }
 
 .nav-logo {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
-  margin-left: 100px; }
+  margin-top: 0px;
+  margin-left: 200px; }
+
+.logo-format {
+  width: 50px; }
 
 h1,
 h2,
 h3 {
   margin: 0;
-  font-weight: 200;
-  text-align: center; }
+  font-weight: 200; }
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
     margin-top: 2rem;
     font-size: 1.7rem;
-    font-weight: 400; }
+    font-weight: 400;
+    text-align: center; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     font-size: 1rem;
     margin-bottom: 2rem;
-    font-weight: 250; }
+    font-weight: 250;
+    text-align: center; }
+
+.hi-heading {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  justify-content: left; }
+
+.msg-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  opacity: 80%; }
+
+.home-greeting {
+  width: 950px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
 
 .bounce {
   animation: bounce 3.2s;
@@ -94,20 +118,24 @@ h3 {
     transform: translateY(-12px); } }
 
 .portfolio {
-  width: 100%;
-  text-align: center; }
+  margin: auto;
+  display: grid;
+  width: 1000px;
+  grid-template-columns: 1fr 1fr; }
 
 .portfolio img {
-  width: 400px;
-  height: 400px; }
+  width: 450px;
+  height: 450px;
+  border-radius: 15px; }
 
 .container {
   position: relative;
   display: inline-block;
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  margin: 10px; }
+  margin: 30px;
+  border-radius: 15px; }
 
 .histo-proj-img {
   background-color: #f1f1f1; }
@@ -122,7 +150,8 @@ h3 {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #333; }
+  background-color: #333;
+  border-radius: 15px; }
 
 .container:hover .overlay {
   opacity: 0.9; }
@@ -168,6 +197,7 @@ strong {
   text-align: left; }
 
 .about-info {
+  margin-top: 30px;
   display: grid;
   grid-template-areas: "bio-img bio";
   grid-template-columns: 1fr 1fr; }
@@ -177,7 +207,8 @@ strong {
     width: 350px;
     height: auto;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
-    margin-right: 190px; }
+    margin-right: 190px;
+    border-radius: 15px; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.1rem;
@@ -327,9 +358,18 @@ strong {
     cursor: pointer; }
 
 .thank-you {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
   margin-top: 60px;
   margin-bottom: 80px;
   font-size: 30px; }
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  margin: auto; }
 
 .future-steps {
   display: flex;
@@ -420,6 +460,23 @@ form .submit {
   form .submit:hover {
     background-color: #7396ed;
     cursor: pointer; }
+
+.ideal-title {
+  margin-bottom: 20px; }
+
+.ideal-link {
+  text-decoration: none;
+  color: #333; }
+
+.ideal-img {
+  border: 4px solid;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  margin-bottom: 50px; }
+
+.bold {
+  font-weight: 600; }
 
 #main-footer {
   text-align: center;
@@ -523,6 +580,36 @@ form .submit {
     transition-delay: 0.24s; }
   .nav-item:nth-child(4) {
     transition-delay: 0.32s; }
+  .home-greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3.5rem;
+    width: 825px; }
+  .hi-heading {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    margin: auto; }
+  .msg-heading {
+    display: flex;
+    justify-content: center;
+    margin: auto; }
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 825px; }
+  .portfolio img {
+    width: 380px;
+    height: 380px;
+    margin: auto; }
+  .container {
+    width: 380px;
+    height: 380px;
+    margin: auto;
+    margin-bottom: 30px; }
   .about-info {
     margin-top: 100px; }
     .about-info .bio {
@@ -623,6 +710,36 @@ form .submit {
     transition-delay: 0.24s; }
   .nav-item:nth-child(4) {
     transition-delay: 0.32s; }
+  .home-greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3.5rem;
+    width: 650px; }
+  .hi-heading {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    margin: auto; }
+  .msg-heading {
+    display: flex;
+    justify-content: center;
+    margin: auto; }
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 660px; }
+  .portfolio img {
+    width: 300px;
+    height: 300px;
+    margin: auto; }
+  .container {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 30px; }
   #about h2 {
     text-align: center; }
   .about-info {
@@ -721,6 +838,35 @@ form .submit {
     transition-delay: 0.24s; }
   .nav-item:nth-child(4) {
     transition-delay: 0.32s; }
+  .home-greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3.2rem;
+    width: 300px; }
+  .hi-heading {
+    display: flex;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    justify-content: center; }
+  .msg-heading {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center; }
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%; }
+  .portfolio img {
+    width: 350px;
+    height: 350px; }
+  .container {
+    width: 350px;
+    height: 350px;
+    margin: 20px auto; }
   #about h2 {
     font-size: 19px;
     margin-bottom: -5px;
@@ -740,14 +886,6 @@ form .submit {
     margin-bottom: 1rem; }
   .fa-angle-down {
     display: none; }
-  .portfolio img {
-    width: 100%;
-    height: 100%; }
-  .container {
-    width: 250px;
-    height: 250px;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-    margin: 20px; }
   .text {
     color: white;
     font-size: 15px;
@@ -828,4 +966,11 @@ form .submit {
   .dance-video {
     width: 320px; }
   .nick-sitemap {
-    width: 320px; } }
+    width: 320px; }
+  .ideal-img {
+    width: 300px;
+    border: 4px solid;
+    border-radius: 15px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 10px; } }
