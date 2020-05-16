@@ -95,10 +95,11 @@ h3 {
 .msg-heading {
   font-size: 2.5rem;
   font-weight: 600;
-  opacity: 80%; }
+  opacity: 80%;
+  margin-left: 1px; }
 
 .home-greeting {
-  width: 950px;
+  width: 945px;
   padding-top: 10px;
   padding-bottom: 50px;
   display: flex;
