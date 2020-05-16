@@ -62,8 +62,17 @@ li a:hover {
   text-decoration: underline;
 }
 
+.menu-nav {
+  width: 1200px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto;
+  justify-content: center;
+}
+
 .nav-btn {
-  margin: 8px 100px 0px 0px;
+  margin: 8px 0px;
+  float: right;
   a:hover {
     color: $secondary-color;
   }
@@ -78,12 +87,8 @@ li a:hover {
 .nav-logo {
   font-size: 18px;
   font-weight: 600;
-  margin-top: 0px;
-  margin-left: 200px;
-}
-
-.logo-format {
-  width: 50px;
+  margin-top: 6px;
+  margin-right: 500px;
 }
 
 //Headings
