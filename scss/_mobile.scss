@@ -20,6 +20,50 @@
 @include mediaLg {
   @import "menu";
 
+  //home
+  .home-greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3.5rem;
+    width: 825px;
+  }
+
+  .hi-heading {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .msg-heading {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 825px;
+  }
+
+  .portfolio img {
+    width: 380px;
+    height: 380px;
+    margin: auto;
+  }
+
+  .container {
+    width: 380px;
+    height: 380px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  //about
   .about-info {
     margin-top: 100px;
 
@@ -58,7 +102,50 @@
 // Tablets & Small Laptops
 @include mediaMd {
   @import "menu";
+  //home
+  .home-greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3.5rem;
+    width: 650px;
+  }
 
+  .hi-heading {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .msg-heading {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 660px;
+  }
+
+  .portfolio img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+
+  .container {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  //about
   #about h2 {
     text-align: center;
   }
@@ -97,6 +184,49 @@
 @include mediaSm {
   @import "menu";
 
+  //home
+  .home-greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3.2rem;
+    width: 300px;
+  }
+
+  .hi-heading {
+    display: flex;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+
+  .msg-heading {
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .portfolio img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .container {
+    width: 350px;
+    height: 350px;
+    margin: 20px auto;
+  }
+
+  //about
   #about h2 {
     font-size: 19px;
     margin-bottom: -5px;
@@ -127,17 +257,6 @@
   }
 
   // Portfolio sass
-  .portfolio img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .container {
-    width: 250px;
-    height: 250px;
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-    margin: 20px;
-  }
 
   .text {
     color: white;
@@ -273,5 +392,14 @@
 
   .nick-sitemap {
     width: 320px;
+  }
+  //ideal lab
+  .ideal-img {
+    width: 300px;
+    border: 4px solid;
+    border-radius: 15px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }

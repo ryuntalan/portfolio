@@ -48,7 +48,7 @@ li a {
   display: block;
   color: $text-color;
   text-align: center;
-  padding: 14px 18px;
+  padding: 20px 18px;
   text-decoration: none;
   font-weight: 300;
   @include easeOut();
@@ -76,9 +76,14 @@ li a:hover {
 }
 
 .nav-logo {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 600;
-  margin-left: 100px;
+  margin-top: 0px;
+  margin-left: 200px;
+}
+
+.logo-format {
+  width: 50px;
 }
 
 //Headings
@@ -87,19 +92,42 @@ h2,
 h3 {
   margin: 0;
   font-weight: 200;
-  text-align: center;
 
   &.lg-heading {
     margin-top: 2rem;
     font-size: 1.7rem;
     font-weight: 400;
+    text-align: center;
   }
 
   &.sm-heading {
     font-size: 1rem;
     margin-bottom: 2rem;
     font-weight: 250;
+    text-align: center;
   }
+}
+
+.hi-heading {
+  margin-top: 2rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  justify-content: left;
+}
+
+.msg-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  opacity: 80%;
+}
+
+.home-greeting {
+  width: 950px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 // arrow scroll
@@ -127,22 +155,26 @@ h3 {
 //Portfolio
 
 .portfolio {
-  width: 100%;
-  text-align: center;
+  margin: auto;
+  display: grid;
+  width: 1000px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .portfolio img {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
+  border-radius: 15px;
 }
 
 .container {
   position: relative;
   display: inline-block;
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  margin: 10px;
+  margin: 30px;
+  border-radius: 15px;
 }
 
 .histo-proj-img {
@@ -160,6 +192,7 @@ h3 {
   opacity: 0;
   transition: 0.5s ease;
   background-color: $text-color;
+  border-radius: 15px;
 }
 
 .container:hover .overlay {
@@ -218,6 +251,7 @@ strong {
   text-align: left;
 }
 .about-info {
+  margin-top: 30px;
   display: grid;
   grid-template-areas: "bio-img bio";
   grid-template-columns: 1fr 1fr;
@@ -229,6 +263,7 @@ strong {
     height: auto;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
     margin-right: 190px;
+    border-radius: 15px;
   }
 
   .bio {
@@ -411,9 +446,19 @@ strong {
 }
 
 .thank-you {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
   margin-top: 60px;
   margin-bottom: 80px;
   font-size: 30px;
+}
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
 }
 
 .future-steps {
@@ -523,6 +568,28 @@ form .submit {
     background-color: #7396ed;
     cursor: pointer;
   }
+}
+
+//ideal-lab
+.ideal-title {
+  margin-bottom: 20px;
+}
+
+.ideal-link {
+  text-decoration: none;
+  color: $text-color;
+}
+
+.ideal-img {
+  border: 4px solid;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.bold {
+  font-weight: 600;
 }
 
 // Footer

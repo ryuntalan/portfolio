@@ -1,11 +1,6 @@
 // scroll reveal
 window.sr = ScrollReveal();
 
-sr.reveal(".container", {
-  duration: 2000,
-  viewFactor: 0.2
-});
-
 sr.reveal(".btn", {
   duration: 2000,
   delay: 2000,
@@ -14,7 +9,7 @@ sr.reveal(".btn", {
 
 sr.reveal("demo", {
   duration: 2000,
-  viewFactor: 0.2
+  viewFactor: 0.8
 });
 
 $(window).bind("scroll", function() {
