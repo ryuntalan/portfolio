@@ -55,10 +55,10 @@ li a:hover {
   margin: 8px 0px;
   float: right; }
   .nav-btn a:hover {
-    color: #5680e9; }
+    color: #3a86ff; }
 
 .nav-item.current > a {
-  color: #5680e9; }
+  color: #3a86ff; }
 
 .nav-logo {
   font-size: 18px;
@@ -186,7 +186,7 @@ strong {
   text-decoration: none;
   padding: 5px; }
   .icons a:hover {
-    color: #5680e9;
+    color: #3a86ff;
     transition: all 0.3s ease-out; }
 
 .icons {
@@ -240,7 +240,7 @@ strong {
     margin: auto;
     margin-bottom: 30px; }
     .about-info .btn:hover {
-      background-color: #8ca8ed;
+      background-color: #5c9bff;
       cursor: pointer; }
 
 .process-desc {
@@ -274,10 +274,10 @@ strong {
   font-weight: 600; }
 
 .example-subheads {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  color: #5680e9; }
+  color: #3a86ff; }
 
 .section-titles {
   text-align: left;
@@ -286,7 +286,6 @@ strong {
   margin-top: 20px; }
 
 .section-desc {
-  margin-left: 10px;
   line-height: 35px;
   margin-bottom: 40px; }
 
@@ -396,7 +395,7 @@ strong {
   justify-content: center;
   margin: 20px auto; }
   #myBtn:hover {
-    background-color: #8ca8ed;
+    background-color: #5c9bff;
     cursor: pointer; }
 
 .danceparty-header-img {
@@ -457,14 +456,14 @@ input {
   appearance: none; }
 
 form .submit {
-  background-color: #8ca8ed;
+  background-color: #78acff;
   border-color: transparent;
   color: #000000;
   font-size: 17px;
   margin-bottom: 30px;
   border-radius: 5px; }
   form .submit:hover {
-    background-color: #7396ed;
+    background-color: #5c9bff;
     cursor: pointer; }
 
 .ideal-title {
@@ -514,7 +513,7 @@ form .submit {
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .menu-btn:hover .btn-line {
-      background: #5680e9; }
+      background: #3a86ff; }
     .menu-btn .btn-line {
       width: 28px;
       height: 3px;
@@ -571,7 +570,7 @@ form .submit {
     li a.contact {
       margin: 0px; }
   li a:hover {
-    color: #5680e9;
+    color: #3a86ff;
     background-color: #f2f2f2; }
   .nav-item {
     transform: translate3d(550px, 0, 0);
@@ -644,7 +643,7 @@ form .submit {
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .menu-btn:hover .btn-line {
-      background: #5680e9; }
+      background: #3a86ff; }
     .menu-btn .btn-line {
       width: 28px;
       height: 3px;
@@ -701,7 +700,7 @@ form .submit {
     li a.contact {
       margin: 0px; }
   li a:hover {
-    color: #5680e9;
+    color: #3a86ff;
     background-color: #f2f2f2; }
   .nav-item {
     transform: translate3d(550px, 0, 0);
@@ -772,7 +771,7 @@ form .submit {
     cursor: pointer;
     transition: all 0.3s ease-out; }
     .menu-btn:hover .btn-line {
-      background: #5680e9; }
+      background: #3a86ff; }
     .menu-btn .btn-line {
       width: 28px;
       height: 3px;
@@ -829,7 +828,7 @@ form .submit {
     li a.contact {
       margin: 0px; }
   li a:hover {
-    color: #5680e9;
+    color: #3a86ff;
     background-color: #f2f2f2; }
   .nav-item {
     transform: translate3d(550px, 0, 0);
@@ -946,7 +945,7 @@ form .submit {
     flex-direction: column; }
   .matrix-img {
     width: 250px;
-    margin: 10px 0px;
+    margin: 10px auto;
     justify-content: center; }
   .sitemap-img {
     width: 250px; }
@@ -954,7 +953,8 @@ form .submit {
     flex-direction: column; }
   .adobexd-img {
     width: 250px;
-    margin: 10px 0px; }
+    margin: 10px auto;
+    justify-content: center; }
   .adobe-link {
     font-size: 18px; }
   .thank-you {

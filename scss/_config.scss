@@ -1,6 +1,7 @@
 $primary-color: #fafafa;
-$secondary-color: #5680e9;
+$secondary-color: #3a86ff;
 $text-color: #333;
+$button-hover: #5c9bff;
 
 @mixin easeOut {
   transition: all 0.3s ease-out;
