@@ -63,7 +63,7 @@ li a:hover {
 }
 
 .menu-nav {
-  width: 1200px;
+  width: 1000px;
   display: flex;
   flex-direction: row-reverse;
   margin: auto;
@@ -88,7 +88,7 @@ li a:hover {
   font-size: 18px;
   font-weight: 600;
   margin-top: 6px;
-  margin-right: 500px;
+  margin-right: 465px;
 }
 
 //Headings
@@ -121,9 +121,9 @@ h3 {
 }
 
 .msg-heading {
+  color: $secondary-color;
   font-size: 2.5rem;
   font-weight: 600;
-  opacity: 80%;
   margin-left: 1px;
 }
 
@@ -170,7 +170,7 @@ h3 {
 .portfolio img {
   width: 450px;
   height: 450px;
-  border-radius: 15px;
+  border-radius: $round-corners;
 }
 
 .container {
@@ -180,7 +180,7 @@ h3 {
   height: 450px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   margin: 30px;
-  border-radius: 15px;
+  border-radius: $round-corners;
 }
 
 .histo-proj-img {
@@ -198,7 +198,7 @@ h3 {
   opacity: 0;
   transition: 0.5s ease;
   background-color: $text-color;
-  border-radius: 15px;
+  border-radius: $round-corners;
 }
 
 .container:hover .overlay {
@@ -231,7 +231,7 @@ strong {
 .icons a {
   color: $text-color;
   text-decoration: none;
-  padding: 5px;
+  padding: 0px 10px;
 
   &:hover {
     color: $secondary-color;
@@ -265,11 +265,11 @@ strong {
   .bio-img {
     grid-area: bio-img;
     margin: auto;
-    width: 350px;
+    width: 400px;
     height: auto;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
     margin-right: 190px;
-    border-radius: 15px;
+    border-radius: $round-corners;
   }
 
   .bio {
@@ -296,11 +296,11 @@ strong {
     font-size: 1rem;
     font-weight: 400;
     padding: 15px 32px;
-    border-radius: 10px;
+    border-radius: $round-corners;
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     &:hover {
       background-color: $button-hover;
@@ -318,7 +318,7 @@ strong {
   margin: 20px auto;
   text-align: left;
   border: 2px solid rgba(51, 51, 51, 0.3);
-  border-radius: 5px;
+  border-radius: $round-corners;
 }
 
 .process-title {
@@ -388,13 +388,13 @@ strong {
   justify-content: center;
   margin: 20px auto;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: $round-corners;
 }
 
 .matrix-img {
   width: 450px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: $round-corners;
 }
 
 .PM-img-sec {
@@ -414,13 +414,13 @@ strong {
   margin-top: 20px;
   margin-bottom: 40px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: $round-corners;
 }
 
 .adobexd-img {
   width: 450px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: $round-corners;
 }
 
 .adobexd {
@@ -438,7 +438,7 @@ strong {
 
   text-decoration: none;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: $round-corners;
   width: 275px;
   display: flex;
   justify-content: center;
@@ -483,7 +483,7 @@ strong {
   font-size: 1rem;
   font-weight: 400;
   padding: 10px 50px;
-  border-radius: 10px;
+  border-radius: $round-corners;
   display: flex;
   justify-content: center;
   margin: 20px auto;
@@ -507,7 +507,7 @@ strong {
 .nick-styl {
   width: 600px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: $round-corners;
 }
 
 .nick-sitemap {
@@ -518,7 +518,7 @@ strong {
   margin-bottom: 40px;
   width: 600px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: $round-corners;
 }
 
 .dance-video {
@@ -529,7 +529,7 @@ strong {
   margin-bottom: 40px;
   width: 600px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: $round-corners;
 }
 
 //Contact
@@ -567,8 +567,8 @@ form .submit {
   border-color: transparent;
   color: #000000;
   font-size: 17px;
-  margin-bottom: 30px;
-  border-radius: 5px;
+  margin-bottom: 20px;
+  border-radius: $round-corners;
 
   &:hover {
     background-color: $button-hover;
@@ -588,7 +588,7 @@ form .submit {
 
 .ideal-img {
   border: 4px solid;
-  border-radius: 15px;
+  border-radius: $round-corners;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   margin-top: 30px;
   margin-bottom: 50px;

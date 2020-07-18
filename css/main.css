@@ -45,7 +45,7 @@ li a:hover {
   text-decoration: underline; }
 
 .menu-nav {
-  width: 1200px;
+  width: 1000px;
   display: flex;
   flex-direction: row-reverse;
   margin: auto;
@@ -64,7 +64,7 @@ li a:hover {
   font-size: 18px;
   font-weight: 600;
   margin-top: 6px;
-  margin-right: 500px; }
+  margin-right: 465px; }
 
 h1,
 h2,
@@ -93,9 +93,9 @@ h3 {
   justify-content: left; }
 
 .msg-heading {
+  color: #3a86ff;
   font-size: 2.5rem;
   font-weight: 600;
-  opacity: 80%;
   margin-left: 1px; }
 
 .home-greeting {
@@ -132,7 +132,7 @@ h3 {
 .portfolio img {
   width: 450px;
   height: 450px;
-  border-radius: 15px; }
+  border-radius: 5px; }
 
 .container {
   position: relative;
@@ -141,7 +141,7 @@ h3 {
   height: 450px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   margin: 30px;
-  border-radius: 15px; }
+  border-radius: 5px; }
 
 .histo-proj-img {
   background-color: #f1f1f1; }
@@ -157,7 +157,7 @@ h3 {
   opacity: 0;
   transition: 0.5s ease;
   background-color: #333;
-  border-radius: 15px; }
+  border-radius: 5px; }
 
 .container:hover .overlay {
   opacity: 0.9; }
@@ -184,7 +184,7 @@ strong {
 .icons a {
   color: #333;
   text-decoration: none;
-  padding: 5px; }
+  padding: 0px 10px; }
   .icons a:hover {
     color: #3a86ff;
     transition: all 0.3s ease-out; }
@@ -210,11 +210,11 @@ strong {
   .about-info .bio-img {
     grid-area: bio-img;
     margin: auto;
-    width: 350px;
+    width: 400px;
     height: auto;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
     margin-right: 190px;
-    border-radius: 15px; }
+    border-radius: 5px; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.1rem;
@@ -234,11 +234,11 @@ strong {
     font-size: 1rem;
     font-weight: 400;
     padding: 15px 32px;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
     .about-info .btn:hover {
       background-color: #5c9bff;
       cursor: pointer; }
@@ -390,7 +390,7 @@ strong {
   font-size: 1rem;
   font-weight: 400;
   padding: 10px 50px;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   margin: 20px auto; }
@@ -460,7 +460,7 @@ form .submit {
   border-color: transparent;
   color: #000000;
   font-size: 17px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border-radius: 5px; }
   form .submit:hover {
     background-color: #5c9bff;
@@ -475,7 +475,7 @@ form .submit {
 
 .ideal-img {
   border: 4px solid;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
   margin-top: 30px;
   margin-bottom: 50px; }
@@ -904,6 +904,7 @@ form .submit {
   .about-info .bio {
     margin: auto; }
   .about-info .bio-img {
+    width: 80%;
     margin-right: auto; }
   .design-example {
     width: 320px;

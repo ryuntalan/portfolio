@@ -2,6 +2,7 @@ $primary-color: #fafafa;
 $secondary-color: #3a86ff;
 $text-color: #333;
 $button-hover: #5c9bff;
+$round-corners: 5px;
 
 @mixin easeOut {
   transition: all 0.3s ease-out;
