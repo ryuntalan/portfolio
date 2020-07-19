@@ -97,6 +97,11 @@
   .fa-angle-down {
     display: none;
   }
+
+  //dark theme
+  .dark-toggle {
+    padding: 12px 12px;
+  }
 }
 
 // Tablets & Small Laptops
@@ -177,6 +182,11 @@
 
   .form-control {
     width: 400px;
+  }
+
+  //dark theme
+  .dark-toggle {
+    padding: 12px 12px;
   }
 }
 
@@ -324,16 +334,16 @@
   }
 
   .design-flow {
-    width: 275px;
+    width: 100%;
     padding: 0px;
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin: auto;
   }
 
   .line-break {
     margin-top: 20px;
-    width: 250px;
+    width: 90%;
   }
 
   .persona-img {
@@ -403,5 +413,10 @@
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
     margin-top: 20px;
     margin-bottom: 10px;
+  }
+
+  //dark theme
+  .dark-toggle {
+    padding: 12px 12px;
   }
 }

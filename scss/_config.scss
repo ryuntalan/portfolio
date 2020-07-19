@@ -1,8 +1,32 @@
+//Light Theme CSS
+
+:root {
+  --color-primary: #fafafa;
+  --color-primary-darken: #f2f2f2;
+  --color-secondary: #3a86ff;
+  --color-tertiary: #78acff;
+  --color-text: #333;
+  --button-hover: #5c9bff;
+  --color-overlay-text: #ffffff;
+  --color-line-break: #e5e5e5;
+}
+
+//Light-Theme
+/*
 $primary-color: #fafafa;
 $secondary-color: #3a86ff;
+$third-color: #78acff;
 $text-color: #333;
 $button-hover: #5c9bff;
+*/
+
+//Dark-Theme
+$background-dark: #121212;
+$overlay-dark: 14%;
+$text-dark: #ffffff; // Opacity 87%
+
 $round-corners: 5px;
+$box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
 
 @mixin easeOut {
   transition: all 0.3s ease-out;
