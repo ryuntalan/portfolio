@@ -958,12 +958,6 @@ input:checked + .slider:before {
     width: 350px;
     height: 350px;
     margin: 20px auto; }
-  #about h2 {
-    font-size: 19px;
-    margin-top: 30px;
-    margin-bottom: -5px;
-    font-weight: 600;
-    text-align: center; }
   .form-control {
     width: 300px; }
   h1.lg-heading,
@@ -986,10 +980,17 @@ input:checked + .slider:before {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+  #about h2 {
+    font-size: 19px;
+    margin-top: 30px;
+    margin-bottom: -5px;
+    font-weight: 600;
+    text-align: center; }
   .bio p {
     font-size: 14px; }
   .about-info .bio {
-    margin: auto; }
+    margin: auto;
+    width: 90%; }
   .about-info .bio-img {
     width: 80%;
     margin-right: auto;
