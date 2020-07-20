@@ -261,12 +261,11 @@ strong {
 //About
 
 #about h2 {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   text-align: left;
 }
 .about-info {
-  margin-top: 30px;
   display: grid;
   grid-template-areas: "bio-img bio";
   grid-template-columns: 1fr 1fr;
@@ -274,10 +273,10 @@ strong {
   .bio-img {
     grid-area: bio-img;
     margin: auto;
-    width: 400px;
+    width: 435px;
     height: auto;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
-    margin-right: 190px;
+    margin-right: 170px;
     border-radius: $round-corners;
   }
 

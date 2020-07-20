@@ -222,22 +222,21 @@ strong {
   vertical-align: middle; }
 
 #about h2 {
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   text-align: left; }
 
 .about-info {
-  margin-top: 30px;
   display: grid;
   grid-template-areas: "bio-img bio";
   grid-template-columns: 1fr 1fr; }
   .about-info .bio-img {
     grid-area: bio-img;
     margin: auto;
-    width: 400px;
+    width: 435px;
     height: auto;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
-    margin-right: 190px;
+    margin-right: 170px;
     border-radius: 5px; }
   .about-info .bio {
     grid-area: bio;
@@ -696,22 +695,24 @@ input:checked + .slider:before {
     height: 380px;
     margin: auto;
     margin-bottom: 30px; }
-  .about-info {
-    margin-top: 100px; }
-    .about-info .bio {
-      width: 80%; }
-    .about-info .bio-img {
-      position: relative;
-      left: 140px;
-      width: 60%; }
   #about h2 {
-    font-size: 23px;
-    margin-bottom: -5px; }
-  .bio-img {
-    position: relative;
-    left: 140px; }
+    text-align: center; }
+  .about-info {
+    grid-template-areas: "bio-img" "bio";
+    grid-template-columns: 1fr; }
+  .about-info .bio-img {
+    margin-right: auto;
+    margin-top: 85px;
+    width: 450px; }
+  .about-info .bio {
+    margin: auto;
+    width: 850px; }
   .bio p {
-    font-size: 15px; }
+    width: 70%;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 25px; }
   .fa-angle-down {
     display: none; }
   .dark-toggle {
@@ -835,13 +836,13 @@ input:checked + .slider:before {
     grid-template-columns: 1fr; }
   .about-info .bio-img {
     margin-right: auto;
-    margin-top: 70px;
-    width: 40%; }
+    margin-top: 85px;
+    width: 450px; }
   .about-info .bio {
     margin: auto;
-    width: 90%; }
+    width: 470px; }
   .bio p {
-    font-size: 14px; }
+    margin-bottom: 25px; }
   .form-control {
     width: 400px; }
   .dark-toggle {
@@ -959,6 +960,7 @@ input:checked + .slider:before {
     margin: 20px auto; }
   #about h2 {
     font-size: 19px;
+    margin-top: 30px;
     margin-bottom: -5px;
     font-weight: 600;
     text-align: center; }
@@ -990,7 +992,8 @@ input:checked + .slider:before {
     margin: auto; }
   .about-info .bio-img {
     width: 80%;
-    margin-right: auto; }
+    margin-right: auto;
+    margin-top: 85px; }
   .design-example {
     width: 320px;
     margin: auto;
