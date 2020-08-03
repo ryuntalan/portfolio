@@ -222,7 +222,7 @@ strong {
   vertical-align: middle; }
 
 #about h2 {
-  margin-top: 40px;
+  margin-top: 65px;
   margin-bottom: 20px;
   text-align: left; }
 
@@ -245,8 +245,8 @@ strong {
     width: 500px;
     line-height: 37px;
     margin-top: 30px; }
-  .about-info .weight {
-    color: var(--color-text);
+  .about-info .about-link {
+    color: var(--color-secondary);
     text-decoration: none; }
   .about-info .contact-btn {
     text-decoration: none; }
@@ -696,7 +696,8 @@ input:checked + .slider:before {
     margin: auto;
     margin-bottom: 30px; }
   #about h2 {
-    text-align: center; }
+    text-align: center;
+    margin-top: 40px; }
   .about-info {
     grid-template-areas: "bio-img" "bio";
     grid-template-columns: 1fr; }
@@ -830,7 +831,8 @@ input:checked + .slider:before {
     margin: auto;
     margin-bottom: 30px; }
   #about h2 {
-    text-align: center; }
+    text-align: center;
+    margin-top: 40px; }
   .about-info {
     grid-template-areas: "bio-img" "bio";
     grid-template-columns: 1fr; }
