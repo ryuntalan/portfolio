@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://use.fontawesome.com/358a83a1a1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/hwt3keg.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Jupyter Extension</title>
+    <meta
+      name="description"
+      content="Ryan Untalan's Personal Website. Hello! This website was created from scratch using HTML, CSS, and JavaScript. I use this website to showcase my projects and connect with people!"
+    />
+    <meta
+      name="keywords"
+      content="ryanuntalan, Ryan, Untalan, Alexander, Website, Portfolio, github, psychology, web developer, personal, pages, Cal, Poly, SLO"
+    />
+    <meta name="author" content="Ryan Untalan" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta
+      name="google-site-verification"
+      content="lTKWMBkCAhLhIuo_bLSbg6BP-FwfV7M1cWy0ti2zzZU"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <ul class="menu-nav">
+          <div class="nav-btn">
+            <li class="nav-item dark-toggle">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="slider round">
+                    <img class="sun-icons" src="img/sun.svg" />
+                    <img class="moon-icons" src="img/moon.svg" />
+                  </div>
+                </label>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link contact">
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="resources/Resume.pdf" target="_blank" class="nav-link">
+                Resume
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">
+                About
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="index.html" class="nav-link project-link">
+                Projects
+              </a>
+            </li>
+          </div>
+          <li style="float: left;" class="nav-item">
+            <a class="nav-link" href="index.html">
+              <div class="nav-logo">Ryan Untalan</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="case-study">
+      <div class="cover-header">
+        <div class="case-title">
+          <div class="jupyter-orange">JupyterLab</div>
+          Tabular Data Editor
+        </div>
+        <div class="case-img">
+          <img src=img/intro.svg />
+        </div>
+      </div>
+      <hr class="line-break" />
+
+      <div class="case-section">
+        <div class="case-section-title">Overview</div>
+        <div class="case-description">
+          <b>Project Description:</b> The JupyterLab Tabular Data Editor is a
+          JupyterLab extension that enables you to edit your data files
+          side-by-side with Jupyter notebooks. I collaborated with two
+          developers on creating this extension during my internship at Project
+          Jupyter.
+        </div>
+        <div class="case-description">
+          <b>Role:</b> UX/UI Designer, Front-end developer, UX Researcher
+        </div>
+        <div class="case-description">
+          <b>Tools:</b> Figma, GitHub, Heuristic Evlauations, Personas, User
+          Journeys, User Stories, Miro, HTML/ CSS
+        </div>
+        <div class="case-description">
+          <b>Project Description:</b> 3 months Jupyter.
+        </div>
+      </div>
+
+      <hr class="line-sep" />
+
+      <div class="case-section">
+        <div class="case-section-title">What is JupterLab?</div>
+        <div class="case-description">
+          JupyterLab is a web-based development environment where people can
+          code and analyze data. It is an open-source software, developed on
+          GitHub, through the consensus of the Jupyter community. It’s a tool
+          used to support a wide range of workflows in data science, scientific
+          computing, and machine learning.
+        </div>
+      </div>
+
+      <hr class="line-sep" />
+
+      <div class="case-section">
+        <div class="case-section-title">Understanding the problem</div>
+        <div class="case-section-emphasis">
+          Editing data files within JupyterLab is inefficient and slow
+        </div>
+        <div class="case-description">
+          Data is an integral part of many JupyterLab workflows, but a native
+          data editing tool is non-existent. Up until our extension, data files
+          (e.g. CSV, TSV, or EXCEL) were read-only in JupyterLab. That meant
+          every time you wanted to edit your data, you either had to directly
+          change code within the file or you wasted time alternating between a
+          spreadsheet editing software and JupyterLab.
+        </div>
+      </div>
+
+      <div class="case-image-sec">
+        <img
+          class="case-center-img"
+          src="img/problem.png"
+          alt="picture with a lot of code that's unreadable"
+        />
+        <div class="case-img-desc">
+          This is just a 20 row by 8 column table. Imagine how bad it would be
+          with a larger set of data.
+        </div>
+      </div>
+
+      <hr class="line-sep" />
+
+      <div class="case-section">
+        <div class="case-section-title">Developing a solution</div>
+        <div class="case-section-emphasis">
+          The JupyterLab Tabular Data Editor makes data files accessible and
+          editable
+        </div>
+        <div class="case-description">
+          Our extension streamlines the editing process with a refined suite of
+          commands that help users prepare data for further work in machine
+          learning, scientific computing, or other data-driven tasks.
+        </div>
+      </div>
+
+      <hr class="line-sep" />
+
+      <div class="case-demo-section">
+        <div class="case-section-title">Final product</div>
+        <div>
+          <video controls class="jupyter-video">
+            <source src="video/binder-demo 2.mp4" type="video/mp4" />
+            <source src="video/binder-demo-2.ogv" type="video/ogv" />
+            <div style="border: 1px solid black; padding: 8px;">
+              Sorry, your browser does not support the &lt;video&gt; tag used in
+              this demo.
+            </div>
+          </video>
+        </div>
+        <div class="demo-buttons">
+          <a
+            href="https://github.com/jupytercalpoly/jupyterlab-tabular-data-editor"
+            target="_blank"
+            ><button class="demo-btn" type="button">GitHub Repo</button></a
+          >
+          <a
+            href="https://mybinder.org/v2/gh/jupytercalpoly/jupyterlab-tabular-data-editor/master?urlpath=lab"
+            target="_blank"
+            ><button class="demo-btn" type="button">Try it out here!</button></a
+          >
+          <a
+            href="https://github.com/jupytercalpoly/jupyterlab-tabular-data-editor/blob/master/PRESS_RELEASE.md"
+            target="_blank"
+            ><button class="demo-btn" type="button">Press Release</button></a
+          >
+        </div>
+      </div>
+
+      <hr class="line-sep" />
+
+      <div class="center-question-emphasis">Design process coming soon :)</div>
+
+      <div class="thank-you">
+        <div class="thanks">Thank you for reading!</div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          Return to Top
+        </button>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

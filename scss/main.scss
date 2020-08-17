@@ -298,7 +298,7 @@ strong {
     text-decoration: none;
   }
   .btn {
-    border: 1px solid #f1f1f1;
+    border: none;
     text-align: center;
     text-decoration: none;
     font-size: 1rem;
@@ -309,6 +309,7 @@ strong {
     justify-content: center;
     margin: auto;
     margin-bottom: 20px;
+    box-shadow: $btn-shadow;
 
     &:hover {
       background-color: var(--button-hover);
@@ -484,7 +485,7 @@ strong {
 
 //top button
 #myBtn {
-  border: 2px solid #f1f1f1;
+  border: none;
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
@@ -494,6 +495,7 @@ strong {
   display: flex;
   justify-content: center;
   margin: 20px auto;
+  box-shadow: $btn-shadow;
 
   &:hover {
     background-color: var(--button-hover);
@@ -576,6 +578,7 @@ form .submit {
   font-size: 17px;
   margin-bottom: 20px;
   border-radius: $round-corners;
+  box-shadow: $btn-shadow;
 
   &:hover {
     background-color: var(--button-hover);
@@ -684,6 +687,128 @@ input:checked + .slider:before {
   height: 11px;
   margin-bottom: 2px;
   margin-left: 3px;
+}
+
+//CASE STUDY
+
+#case-study {
+  margin: auto;
+  width: 1000px;
+}
+
+.cover-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0px;
+}
+
+.jupyter-orange {
+  color: #f37626;
+}
+
+.case-title {
+  font-size: 48px;
+  font-weight: 600;
+  padding: 0px 20px 80px 0px;
+}
+
+.case-img {
+  padding: 0px 0px 0px 20px;
+  width: 520px;
+}
+
+.line-sep {
+  border: 1px solid var(--color-line-break);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.case-section {
+  width: 1000px;
+}
+
+.case-section-title {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.case-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  margin-bottom: 15px;
+}
+
+.case-section-emphasis {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.case-center-img {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 720px;
+  border-radius: $round-corners;
+}
+
+.case-img-desc {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.case-image-sec {
+  margin: 50px auto;
+}
+
+.jupyter-video {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 720px;
+  box-shadow: $box-shadow;
+  border-radius: $round-corners;
+}
+
+.center-question-emphasis {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 70px;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.demo-btn {
+  border: none;
+  padding: 15px 30px;
+  box-shadow: $btn-shadow;
+  border-radius: $round-corners;
+  font-size: 16px;
+
+  &:hover {
+    background-color: var(--button-hover);
+
+    cursor: pointer;
+  }
+}
+
+.demo-buttons {
+  width: 720px;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: space-around;
 }
 
 @import "mobile";
