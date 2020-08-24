@@ -749,6 +749,12 @@ input:checked + .slider:before {
   font-style: italic;
 }
 
+.case-section-sub-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
 .case-center-img {
   display: flex;
   align-items: center;
@@ -785,6 +791,7 @@ input:checked + .slider:before {
   justify-content: center;
   margin: auto;
   margin-top: 70px;
+  margin-bottom: 70px;
   font-weight: 600;
   font-size: 32px;
 }
@@ -809,6 +816,82 @@ input:checked + .slider:before {
   flex-direction: row;
   margin: auto;
   justify-content: space-around;
+}
+
+.histo-3d-img {
+  width: 520px;
+}
+
+.histo-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+  padding: 5px 0px;
+}
+
+.case-stagger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0px;
+}
+
+.case-left {
+  margin-right: 50px;
+}
+
+.case-right {
+  margin-left: 50px;
+}
+
+.stagger-desc {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.stagger-img {
+  height: 500px;
+  border-radius: $round-corners;
+  box-shadow: $btn-shadow-2;
+}
+
+.center-this {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.numbered-list {
+  text-align: left;
+  font-weight: 600;
+  line-height: 180%;
+  font-size: 21px;
+}
+
+.top-space {
+  margin-top: 40px;
+}
+
+.insight-quote {
+  width: 720px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 170%;
+}
+
+.ideal-cover-img {
+  border-radius: $round-corners;
+  padding: 0px;
+  margin-left: 50px;
+  box-shadow: $btn-shadow-2;
+}
+
+.ideal-website-img {
+  box-shadow: $btn-shadow-2;
+  margin: 40px auto;
 }
 
 @import "mobile";
