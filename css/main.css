@@ -1371,9 +1371,15 @@ input:checked + .slider:before {
   .center-question-emphasis {
     font-size: 21px; }
   .histo-3d-img {
-    width: 250px;
+    width: 280px;
     display: flex;
-    margin: auto; }
+    margin: auto;
+    padding: 0px; }
+  .cover-jupyter-img {
+    width: 280px;
+    display: flex;
+    margin: auto;
+    padding: 0px; }
   .numbered-list {
     text-align: left;
     font-weight: 600;
