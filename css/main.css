@@ -1373,12 +1373,12 @@ input:checked + .slider:before {
   .histo-3d-img {
     width: 280px;
     display: flex;
-    margin: auto;
+    margin: 20px 0px;
     padding: 0px; }
   .cover-jupyter-img {
     width: 280px;
     display: flex;
-    margin: auto;
+    margin: 20px 0px;
     padding: 0px; }
   .numbered-list {
     text-align: left;
