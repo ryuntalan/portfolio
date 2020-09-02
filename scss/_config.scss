@@ -9,6 +9,7 @@
   --button-hover: #5c9bff;
   --color-overlay-text: #ffffff;
   --color-line-break: #e5e5e5;
+  --color-button: #efefef;
 }
 
 //Light-Theme
@@ -24,6 +25,7 @@ $button-hover: #5c9bff;
 $background-dark: #121212;
 $overlay-dark: 14%;
 $text-dark: #ffffff; // Opacity 87%
+$text-always-black: #333;
 
 $round-corners: 5px;
 $box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);

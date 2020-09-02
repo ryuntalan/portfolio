@@ -275,7 +275,7 @@ strong {
     margin: auto;
     width: 435px;
     height: auto;
-    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: $btn-shadow-2;
     margin-right: 170px;
     border-radius: $round-corners;
   }
@@ -310,6 +310,7 @@ strong {
     margin: auto;
     margin-bottom: 20px;
     box-shadow: $btn-shadow;
+    background-color: var(--color-button);
 
     &:hover {
       background-color: var(--button-hover);
@@ -496,6 +497,7 @@ strong {
   justify-content: center;
   margin: 20px auto;
   box-shadow: $btn-shadow;
+  background-color: var(--color-button);
 
   &:hover {
     background-color: var(--button-hover);
@@ -802,6 +804,7 @@ input:checked + .slider:before {
   box-shadow: $btn-shadow;
   border-radius: $round-corners;
   font-size: 16px;
+  background-color: var(--color-button);
 
   &:hover {
     background-color: var(--button-hover);
@@ -1008,6 +1011,7 @@ input:checked + .slider:before {
 }
 
 .number-text {
+  color: $text-always-black;
   font-weight: 600;
   font-size: 12px;
   padding: 8px 12px;
