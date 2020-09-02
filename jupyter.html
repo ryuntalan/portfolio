@@ -51,9 +51,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-link contact">
-                Contact
-              </a>
+              <a href="contact.html" class="nav-link contact"> Contact </a>
             </li>
             <li class="nav-item">
               <a href="resources/Resume.pdf" target="_blank" class="nav-link">
@@ -62,18 +60,14 @@
             </li>
 
             <li class="nav-item">
-              <a href="about.html" class="nav-link">
-                About
-              </a>
+              <a href="about.html" class="nav-link"> About </a>
             </li>
 
             <li class="nav-item">
-              <a href="index.html" class="nav-link project-link">
-                Projects
-              </a>
+              <a href="index.html" class="nav-link project-link"> Projects </a>
             </li>
           </div>
-          <li style="float: left;" class="nav-item">
+          <li style="float: left" class="nav-item">
             <a class="nav-link" href="index.html">
               <div class="nav-logo">Ryan Untalan</div>
             </a>
@@ -165,19 +159,23 @@
         <div class="case-description">
           Our extension streamlines the editing process with a refined suite of
           commands that help users prepare data for further work in machine
-          learning, scientific computing, or other data-driven tasks.
+          learning, scientific computing, or other data-driven tasks. You can create and edit CSV files from scratch, navigate through millions of cells smoothly, and manage your data side-by-side with Jupyter Notebooks.
         </div>
       </div>
 
       <hr class="line-sep" />
 
       <div class="case-demo-section">
-        <div class="case-section-title">Current Product</div>
+        <div class="case-section-title">Official Release</div>
+        <div class="case-description">
+          The official release of the extension was August
+          28th, 2020. Since then, it has received over 1,300 downloads. 
+        </div>
         <div>
           <video controls class="jupyter-video">
-            <source src="video/binder-demo 2.mp4" type="video/mp4" />
-            <!--  <source src="video/binder-demo-2.ogv" type="video/ogv" /> -->
-            <div style="border: 1px solid black; padding: 8px;">
+            <source src="video/final-demo.mp4" type="video/mp4" />
+            <source src="video/final-demo.ogv" type="video/ogv" />
+            <div style="border: 1px solid black; padding: 8px">
               Sorry, your browser does not support the &lt;video&gt; tag used in
               this demo.
             </div>
@@ -195,16 +193,239 @@
             ><button class="demo-btn" type="button">Try it out here!</button></a
           >
           <a
-            href="https://github.com/jupytercalpoly/jupyterlab-tabular-data-editor/blob/master/PRESS_RELEASE.md"
+            href="https://jupyterlab-tabular-data-editor.readthedocs.io/en/latest/#"
             target="_blank"
-            ><button class="demo-btn" type="button">Press Release</button></a
+            ><button class="demo-btn" type="button">Documentation</button></a
           >
         </div>
       </div>
 
       <hr class="line-sep" />
 
-      <div class="center-question-emphasis">Design process coming soon :)</div>
+      <div class="center-question-emphasis">How was it made?</div>
+
+      <hr class="line-sep" />
+
+      <div class="case-section">
+        <div class="case-section-title">The Design Process</div>
+        <div class="case-section-sub-title">
+          Project Assignment
+        </div>
+        <div class="case-description">
+          “Create a JupyterLab extension for editing in JupyterLab’s datagrid”
+        </div>
+
+        <div class="case-section-sub-title top-space">
+          Understanding our Users
+        </div>
+        <div class="case-description">
+          The foundation of our project begins with understanding the people were developing the extension for. I created personas, journey maps, user stories, and user flows to help the team visualize and understand our future users. 
+        </div>
+        
+        <!-- Slideshow container -->
+        <div class="the-slideshow">
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+          
+            <img class="slide-img" src="img/Sam-Journey-Map.jpg">
+            
+          </div>
+
+          <div class="mySlides fade">
+         
+            <img class="slide-img" src="img/Addison-Journey-Map.jpg" >
+          
+          </div>
+
+          <div class="mySlides fade">
+            
+            <img class="slide-img" src="img/Hayden-Journey-Map.jpg" >
+           
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+      </div>
+
+
+
+        <div class="case-description">
+          Through this research phase, we discovered several pain points when using JupyterLab to clean and edit data files. These pain points were then translated into opportunities to improve the users workflow.
+        </div>
+        <div class="center-this">
+          <div class="numbered-list">
+            1. Data files are made editable within JupyterLab
+            <br />
+            2. Several tools are accessible to organize data
+            <br />
+            3. Data files are connected through the cloud 
+            <br />
+            4. Code can be used to clean the data and create outputs
+          </div>
+        </div>
+
+        <div class="case-section-sub-title top-space">
+          Opportunities into Key Features
+        </div>
+        <div class="case-description">
+          My team and I then brainstormed features to address each opportunity. Through discussion, we created a list that prioritized each feature based on user value and feasibility. The feature list gave structure to the project. It helped ensure that we were working on things that would help the user achieve an efficient data editing process.
+        </div>
+
+        <div class="case-section-sub-title top-space">
+          Wireframing and Prototyping
+        </div>
+        <div class="case-description">
+          While the developers worked on setting up GitHub and the JupyterLab extension, I started to wireframe and prototype the key features. I used Figma and the Project Jupyter design system to create my designs. 
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="the-slideshow">
+          <div class="slideshow-container">
+  
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides2 fade">
+              <div class="number-text">1 / 10</div>
+              <img src="img/gifs/edit-cell.gif" class="jp-gif"/>
+              <div class="caption-text">Edit a cell</div>
+            </div>
+  
+            <div class="mySlides2 fade">
+              <div class="number-text">2 / 10</div>
+              <img src="img/gifs/insert-delete.gif" class="jp-gif"/>
+              <div class="caption-text">Insert and delete rows and columns</div>
+            </div>
+  
+            <div class="mySlides2 fade">
+              <div class="number-text">3 / 10</div>
+              <img src="img/gifs/moving-data.gif" class="jp-gif"/>
+              <div class="caption-text">Move and rearrange data</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <div class="number-text">4 / 10</div>
+              <img src="img/gifs/filter-sort.gif" class="jp-gif"/>
+              <div class="caption-text">Filter and sort data</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <div class="number-text">5 / 10</div>
+              <img src="img/gifs/search-replace.gif" class="jp-gif"/>
+              <div class="caption-text">Search and replace</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <div class="number-text">6 / 10</div>
+              <img src="img/gifs/freeze.gif" class="jp-gif"/>
+              <div class="caption-text">Freeze rows and columns</div>
+            </div>
+
+
+            <div class="mySlides2 fade">
+              <div class="number-text">7 / 10</div>
+              <img src="img/gifs/context-menu-2.gif" class="jp-gif"/>
+              <div class="caption-text">Updated context menu: Multi insert and remove</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <div class="number-text">8 / 10</div>
+              <img src="img/gifs/copy.gif" class="jp-gif"/>
+              <div class="caption-text">Copy and paste content</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <div class="number-text">9 / 10</div>
+              <img src="img/gifs/ghost-add.gif" class="jp-gif"/>
+              <div class="caption-text">Add rows and columns</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <div class="number-text">10 / 10</div>
+              <img src="img/gifs/toggle.gif" class="jp-gif"/>
+              <div class="caption-text">Format Data Toggle</div>
+            </div>
+  
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+          </div>
+          
+
+        </div>
+
+
+
+        <div class="case-section-sub-title top-space">
+          Designing for Both Light and Dark Theme
+        </div>
+
+        <div class="case-image-sec">
+          <img
+            class="case-center-img"
+            src="img/light-dark-theme.png"
+            alt="structure of our app"
+          />
+        </div>
+
+        <div class="case-section-sub-title top-space">
+          Communicating through GitHub
+        </div>
+        <div class="case-description">
+          As a designer, I want to effectively communicate with my developers. GitHub is an amazing tool in presenting my designs to them. I created issues on our GitHub repository and uploaded prototypes, mockups, and design details. Not only was this method effective in communicating design specs, but it also consolidated all of the information into one place where the developers can quickly access it.
+        </div>
+
+        <div class="case-image-sec">
+          <a href="https://github.com/jupytercalpoly/jupyterlab-tabular-data-editor/issues/200" target="_blank">
+          <img
+            class="case-center-img"
+            src="img/github-issue.png"
+            alt="structure of our app"
+          />
+        </a>
+        </div>
+
+        <div class="case-section-sub-title top-space">
+          Design Reviews
+        </div>
+        <div class="case-description">
+          Throughout the 10 weeks, I presented my designs to core Jupyter members. These reviews helped my team and I discover ideas to further improve our users' experience. Each review fostered a process of continuous improvements and iterations.
+        </div>
+
+        <div class="case-section-sub-title top-space">
+          Front-end Development
+        </div>
+        <div class="case-description">
+          I worked on the front-end for the data table, toolbar interface, and context menus. I also take great pride in making color styling changes so that it’s WCAG AAA approved!
+        </div>
+
+        <div class="case-section-sub-title top-space">
+          Usability Testing
+        </div>
+        <div class="case-description">
+          After 8 weeks of design and development, we began usability testing! I led and executed all the moderated usability tests for our team. Each test was conducted through zoom, and our participants were able to access our extension through a binder link. I then translated the findings into actionables for the developers. The tests helped us find bugs and unexpected interactions. We learned about the many mini interactions people perform when using a data table editor, and it helped us create a more informed and polished experience.
+        </div>
+
+        <hr class="line-sep" />
+
+        <div class="case-section">
+          <div class="case-section-title">Reflection</div>
+          <div class="case-description">
+            It has been an exciting learning experience during the 10 weeks working on this project. From writing a press release to presenting the final product, I’ve gained a lot of experience designing and developing a project end-to-end. The Project Jupyter internship introduced me to the world of open-source software, and I look forward to further contributing to the community. The internship was supposed to be in-person, but that changed due to the pandemic. Although it would have been fun to work side-by-side with each other, we adapted to our situation and collaborated remotely. Overall, I’m thankful for the opportunity to design with the guidance and mentorship of the core JupyterLab team.
+          </div>
+
+
 
       <div class="thank-you">
         <div class="thanks">Thank you for reading!</div>

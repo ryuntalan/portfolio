@@ -772,7 +772,7 @@ input:checked + .slider:before {
 }
 
 .case-image-sec {
-  margin: 50px auto;
+  margin: 40px auto;
 }
 
 .jupyter-video {
@@ -892,6 +892,133 @@ input:checked + .slider:before {
 .ideal-website-img {
   box-shadow: $btn-shadow-2;
   margin: 40px auto;
+}
+
+//slideshow
+
+.the-slideshow {
+  margin: 40px auto;
+}
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides2 {
+  display: none;
+}
+
+.slide-img {
+  width: 65%;
+  display: flex;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  margin-top: -22px;
+  padding: 18px;
+  color: var(--color-text);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: $round-corners;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: var(--color-secondary);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+//JUPYTER GIFS
+
+.gif-showcase {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jp-gif {
+  width: 80%;
+  border-radius: $round-corners;
+  box-shadow: $btn-shadow;
+  display: flex;
+  margin: auto;
+}
+
+.number-text {
+  font-weight: 600;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-text {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
 @import "mobile";
