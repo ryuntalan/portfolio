@@ -124,15 +124,17 @@ h3 {
 
 .hi-heading {
   margin-top: 2rem;
-  font-size: 3.5rem;
+  font-size: 2.55rem;
   font-weight: 600;
   justify-content: left;
 }
 
 .msg-heading {
-  color: var(--color-secondary);
-  font-size: 2.5rem;
-  font-weight: 600;
+  color: var(--color-text);
+  line-height: 38px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 5px;
   margin-left: 1px;
 }
 
@@ -711,7 +713,7 @@ input:checked + .slider:before {
 }
 
 .case-title {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 600;
   padding: 0px 20px 80px 0px;
 }
@@ -777,6 +779,13 @@ input:checked + .slider:before {
   margin: 40px auto;
 }
 
+.cover-jupyter-img {
+  border-radius: $round-corners;
+  padding: 0px;
+  margin-left: 50px;
+  box-shadow: $btn-shadow-2;
+}
+
 .jupyter-video {
   display: flex;
   justify-content: center;
@@ -822,7 +831,8 @@ input:checked + .slider:before {
 }
 
 .histo-3d-img {
-  width: 520px;
+  width: 420px;
+  margin: 40px 80px;
 }
 
 .histo-header {

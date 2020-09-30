@@ -113,14 +113,16 @@ h3 {
 
 .hi-heading {
   margin-top: 2rem;
-  font-size: 3.5rem;
+  font-size: 2.55rem;
   font-weight: 600;
   justify-content: left; }
 
 .msg-heading {
-  color: var(--color-secondary);
-  font-size: 2.5rem;
-  font-weight: 600;
+  color: var(--color-text);
+  line-height: 38px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 5px;
   margin-left: 1px; }
 
 .home-greeting {
@@ -592,7 +594,7 @@ input:checked + .slider:before {
   color: #f37626; }
 
 .case-title {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 600;
   padding: 0px 20px 80px 0px; }
 
@@ -647,6 +649,12 @@ input:checked + .slider:before {
 .case-image-sec {
   margin: 40px auto; }
 
+.cover-jupyter-img {
+  border-radius: 5px;
+  padding: 0px;
+  margin-left: 50px;
+  box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.14), 0px 3px 4px rgba(50, 50, 50, 0.12), 0px 1px 5px rgba(50, 50, 50, 0.2); }
+
 .jupyter-video {
   display: flex;
   justify-content: center;
@@ -685,7 +693,8 @@ input:checked + .slider:before {
   justify-content: space-around; }
 
 .histo-3d-img {
-  width: 520px; }
+  width: 420px;
+  margin: 40px 80px; }
 
 .histo-header {
   display: flex;
@@ -959,7 +968,9 @@ input:checked + .slider:before {
   .msg-heading {
     display: flex;
     justify-content: center;
-    margin: auto; }
+    margin: auto;
+    margin-top: 10px;
+    width: 800px; }
   .portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1010,7 +1021,10 @@ input:checked + .slider:before {
     margin-left: 0px; }
   .histo-title {
     font-size: 48px;
-    padding: 0px 0px 80px 0px; } }
+    padding: 0px 0px 80px 0px; }
+  .histo-3d-img {
+    width: 420px;
+    margin: 20px 40px; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn {
@@ -1108,7 +1122,10 @@ input:checked + .slider:before {
   .msg-heading {
     display: flex;
     justify-content: center;
-    margin: auto; }
+    margin: auto;
+    width: 500px;
+    font-size: 1.2rem;
+    margin-top: 10px; }
   .portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1181,7 +1198,8 @@ input:checked + .slider:before {
     padding: 15px 20px;
     font-size: 14px; }
   .histo-3d-img {
-    width: 300px; }
+    width: 420px;
+    margin: 0px 0px 20px 0px; }
   .case-stagger {
     display: flex;
     align-items: center;
@@ -1300,7 +1318,10 @@ input:checked + .slider:before {
   .msg-heading {
     display: flex;
     font-size: 1.5rem;
-    justify-content: center; }
+    justify-content: center;
+    width: 100%;
+    font-size: 1.15rem;
+    margin-top: 10px; }
   .portfolio {
     display: flex;
     flex-direction: column;
