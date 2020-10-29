@@ -124,18 +124,29 @@ h3 {
 
 .hi-heading {
   margin-top: 2rem;
-  font-size: 2.5rem;
+  font-size: 1.7em;
   font-weight: 600;
   justify-content: left;
 }
 
+.link {
+  color: var(--color-secondary);
+  text-decoration: none;
+  padding: 0px;
+  display: inline;
+}
+
 .msg-heading {
   color: var(--color-text);
-  line-height: 38px;
-  font-size: 1.5rem;
+  line-height: 32px;
+  font-size: 1.1rem;
   font-weight: 400;
   margin-top: 5px;
   margin-left: 1px;
+}
+
+.home-format {
+  width: 850px;
 }
 
 .home-greeting {
@@ -264,9 +275,18 @@ strong {
 
 #about h2 {
   margin-top: 65px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: left;
 }
+
+.bio-heading {
+  font-weight: 600;
+}
+
+.bio-description {
+  margin-top: 15px;
+}
+
 .about-info {
   display: grid;
   grid-template-areas: "bio-img bio";
