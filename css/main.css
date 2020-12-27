@@ -4,7 +4,7 @@
   --color-secondary: #3a86ff;
   --color-tertiary: #78acff;
   --color-text: #333;
-  --button-hover: #5c9bff;
+  --button-hover: #d8d8d8;
   --color-overlay-text: #ffffff;
   --color-line-break: #e5e5e5;
   --color-button: #efefef; }
@@ -500,7 +500,7 @@ input {
   appearance: none; }
 
 form .submit {
-  background-color: var(--color-tertiary);
+  background-color: var(--color-button);
   border-color: transparent;
   color: #000000;
   font-size: 17px;
