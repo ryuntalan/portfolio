@@ -145,6 +145,34 @@
     width: 420px;
     margin: 20px 40px;
   }
+
+  .hero-shot {
+    width: 720px;
+  }
+
+  .case-stagger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    flex-direction: column-reverse;
+  }
+
+  .case-left {
+    width: 600px;
+  }
+
+  .stagger-desc {
+    margin-top: 20px;
+  }
+
+  .stagger-info {
+    margin-bottom: 40px;
+  }
+
+  .switch-sides {
+    flex-direction: column;
+  }
 }
 
 // Tablets & Small Laptops
@@ -265,6 +293,10 @@
     margin-left: 0px;
   }
 
+  .hero-shot {
+    width: 500px;
+  }
+
   .case-title {
     font-size: 42px;
     font-weight: 600;
@@ -314,21 +346,32 @@
   }
 
   .case-left {
-    margin-right: 0px;
+    width: 520px;
   }
 
   .case-right {
-    margin-left: 0px;
+    width: 520px;
   }
 
   .stagger-desc {
-    font-weight: 600;
-    font-size: 21px;
     margin-top: 20px;
   }
 
-  .stagger-img {
-    height: 500px;
+  .stagger-info {
+    margin-bottom: 40px;
+  }
+
+  .mobile-gif {
+    width: 280px;
+  }
+
+  .feature-img {
+    width: 520px;
+  }
+
+  .stagger-desc {
+    font-size: 21px;
+    margin-top: 20px;
   }
 
   .switch-sides {
@@ -502,7 +545,6 @@
 
   .line-break {
     margin-top: 20px;
-    width: 90%;
   }
 
   .persona-img {
@@ -611,6 +653,10 @@
     padding: 35px 0px 20px 0px;
   }
 
+  .case-study {
+    margin: auto;
+  }
+
   .case-img {
     padding: 20px 0px;
     width: 350px;
@@ -621,6 +667,10 @@
   }
 
   .case-center-img {
+    width: 350px;
+  }
+
+  .hero-shot {
     width: 350px;
   }
 
@@ -691,5 +741,56 @@
   .prev,
   .next {
     top: 36%;
+  }
+
+  .spline {
+    width: 350px;
+  }
+
+  .histo-hero {
+    margin: auto;
+    margin-top: 40px;
+    width: 300px;
+  }
+
+  .case-stagger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+    flex-direction: column-reverse;
+  }
+
+  .case-left {
+    width: 350px;
+  }
+
+  .case-right {
+    width: 350px;
+  }
+
+  .stagger-desc {
+    margin-top: 20px;
+  }
+
+  .stagger-info {
+    margin-bottom: 0px;
+  }
+
+  .mobile-gif {
+    width: 280px;
+  }
+
+  .feature-img {
+    width: 350px;
+  }
+
+  .stagger-desc {
+    font-size: 21px;
+    margin-top: 20px;
+  }
+
+  .switch-sides {
+    flex-direction: column;
   }
 }

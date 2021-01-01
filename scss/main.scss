@@ -29,8 +29,8 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: "Muli", "Raleway", "Helvetica Neue", "Segoe UI", Tahoma, Verdana,
-    sans-serif;
+  font-family: "Inter", "Muli", "Raleway", "Helvetica Neue", "Segoe UI", Tahoma,
+    Verdana, sans-serif;
 }
 
 .line-break {
@@ -58,7 +58,7 @@ li a {
   text-align: center;
   padding: 20px 18px;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   @include easeOut();
 
   &.contact {
@@ -75,7 +75,7 @@ li a:hover {
   display: flex;
   flex-direction: row-reverse;
   margin: auto;
-  justify-content: right;
+  justify-content: space-between;
 }
 
 .nav-btn {
@@ -93,11 +93,14 @@ li a:hover {
   }
 }
 
+.ryan-logo {
+  padding: 20px 18px 20px 0px;
+}
+
 .nav-logo {
   font-size: 18px;
   font-weight: 600;
   margin-top: 6px;
-  margin-right: 415px;
 }
 
 //Headings
@@ -146,11 +149,11 @@ h3 {
 }
 
 .home-format {
-  width: 850px;
+  width: 1000px;
 }
 
 .home-greeting {
-  width: 945px;
+  width: 1000px;
   padding-top: 10px;
   padding-bottom: 50px;
   display: flex;
@@ -185,23 +188,23 @@ h3 {
 .portfolio {
   margin: auto;
   display: grid;
-  width: 1000px;
+  width: 1100px;
   grid-template-columns: 1fr 1fr;
 }
 
 .portfolio img {
-  width: 450px;
-  height: 450px;
+  width: 500px;
+  height: 500px;
   border-radius: $round-corners;
 }
 
 .container {
   position: relative;
   display: inline-block;
-  width: 450px;
-  height: 450px;
+  width: 500px;
+  height: 500px;
   box-shadow: $box-shadow;
-  margin: 30px;
+  margin: 25px;
   border-radius: $round-corners;
 }
 
@@ -229,14 +232,14 @@ h3 {
 
 .proj-title {
   text-align: center;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 22px;
 }
 
 .text {
   color: var(--color-overlay-text);
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 400;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -305,7 +308,7 @@ strong {
   .bio {
     grid-area: bio;
     font-size: 1.1rem;
-    font-weight: 300;
+    font-weight: 400;
     width: 500px;
     line-height: 37px;
     margin-top: 30px;
@@ -527,44 +530,6 @@ strong {
   }
 }
 
-//dance party
-
-.danceparty-header-img {
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
-  margin-bottom: 10px;
-  width: 500px;
-}
-
-.nick-styl {
-  width: 600px;
-  box-shadow: $box-shadow;
-  border-radius: $round-corners;
-}
-
-.nick-sitemap {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  width: 600px;
-  box-shadow: $box-shadow;
-  border-radius: $round-corners;
-}
-
-.dance-video {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  width: 600px;
-  box-shadow: $box-shadow;
-  border-radius: $round-corners;
-}
-
 //Contact
 
 #contact h2 {
@@ -585,7 +550,7 @@ form {
   color: var(--color-text);
   font-size: 15px;
   margin-bottom: 16px;
-  font-weight: 250;
+  font-weight: 400;
 }
 
 input {
@@ -645,7 +610,7 @@ form .submit {
 //Dark-theme
 
 .dark-toggle {
-  padding: 23px 12px;
+  padding: 23px 0px 23px 12px;
 }
 
 .theme-switch-wrapper {
@@ -850,45 +815,59 @@ input:checked + .slider:before {
   justify-content: space-around;
 }
 
-.histo-3d-img {
-  width: 420px;
-  margin: 40px 80px;
-}
-
-.histo-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-left: 150px;
-  padding: 5px 0px;
-}
-
 .case-stagger {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 50px 0px;
+  justify-content: space-between;
+  margin: 120px auto;
 }
 
-.case-left {
-  margin-right: 50px;
-}
-
-.case-right {
-  margin-left: 50px;
+.top-case-stagger {
+  margin: 40px auto 120px auto;
 }
 
 .stagger-desc {
   font-weight: 600;
   font-size: 24px;
+  margin: auto;
+  margin-bottom: 4px;
+}
+
+.stagger-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
 }
 
 .stagger-img {
-  height: 500px;
+  width: 65%;
   border-radius: $round-corners;
   box-shadow: $btn-shadow-2;
+}
+
+.feature-img {
+  width: 600px;
+}
+
+.spec-btn-spacing {
+  margin-top: 40px;
+}
+
+.mobile-gif {
+  width: 320px;
+  margin: auto;
+  justify-content: center;
+}
+
+.case-left {
+  width: 320px;
+  display: flex;
+  align-items: center;
+}
+
+.case-right {
+  display: flex;
+  width: 600px;
 }
 
 .center-this {
@@ -1053,6 +1032,44 @@ input:checked + .slider:before {
   text-align: center;
   font-weight: 600;
   margin-top: 20px;
+}
+
+//Lumina
+.spline {
+  width: 100%;
+  height: 600px;
+}
+
+.hero-shot {
+  width: 800px;
+  margin: auto;
+  align-content: center;
+  padding: 40px 0px;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.hero-subtitle {
+  display: flex;
+  width: 270px;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.hero-img {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  border-radius: $round-corners;
+}
+
+.histo-hero {
+  margin-top: 40px;
+  width: 500px;
 }
 
 @import "mobile";
