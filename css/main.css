@@ -709,7 +709,8 @@ input:checked + .slider:before {
   box-shadow: 0px 2px 4px rgba(50, 50, 50, 0.14), 0px 3px 4px rgba(50, 50, 50, 0.12), 0px 1px 5px rgba(50, 50, 50, 0.2); }
 
 .feature-img {
-  width: 600px; }
+  width: 600px;
+  height: 100%; }
 
 .spec-btn-spacing {
   margin-top: 40px; }
