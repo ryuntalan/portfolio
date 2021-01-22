@@ -15,6 +15,8 @@
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.typekit.net/hwt3keg.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="js/main.js"></script>
+
     <title>Ryan Untalan</title>
     <meta
       name="description"
@@ -53,31 +55,31 @@
               </div>
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-link contact">
+              <a href="/contact.html" class="nav-link contact">
                 Contact
               </a>
             </li>
             <li class="nav-item">
-              <a href="resources/Resume.pdf" target="_blank" class="nav-link">
+              <a href="/resources/Resume.pdf" target="_blank" class="nav-link">
                 Resume
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="about.html" class="nav-link">
+              <a href="/about.html" class="nav-link">
                 About
               </a>
             </li>
 
             <li class="nav-item">
-              <a href="index.html" class="nav-link project-link bold">
+              <a href="/index.html" class="nav-link project-link bold">
                 Projects
               </a>
             </li>
           </div>
           <div class="left-logo">
           <li class="nav-item">
-            <a class="nav-link ryan-logo" href="index.html">
+            <a class="nav-link ryan-logo" href="/index.html">
               <div class="nav-logo">Ryan Untalan</div>
             </a>
           </li>
@@ -85,25 +87,24 @@
         </ul>
       </nav>
     </header>
-
-
-    <main id="home">
+    <main id="swup" class="transition-fade">
       <div class="home-greeting">
         <div class="home-format">
-        <h1 class="hi-heading">Hello! I'm Ryan</h1>
-        <h2 class="msg-heading">
-          I’m a product designer who is fascinated by the personal narratives
-          that make us human. Currently pursuing a Masters of  
-       
-        Human-Computer Interaction + Design
-        at the University of Washington.
-        </h2>
-      </div>
+          <h1 class="hi-heading gradient-text">Hello! I'm Ryan</h1>
+          <h2 class="msg-heading">
+            I’m a product designer who is fascinated by the personal narratives
+            that make us human. 
+            <br>Currently pursuing a Masters of  
+        
+          Human-Computer Interaction + Design
+          at the University of Washington.
+          </h2>
+        </div>
       </div>
 
       <div class="portfolio">
-        <div class="container">
-          <a href="jupyter.html">
+        <div class="container item-left">
+          <a href="/jupyter.html">
             <img
               class="project"
               src="img/jupyter-square.png"
@@ -119,9 +120,9 @@
           </a>
         </div>
 
-        <div class="container">
+        <div class="container item-right">
           <a
-            href="lumina.html"
+            href="/lumina.html"
           >
             <img
               class="project"
@@ -137,8 +138,8 @@
           </a>
         </div>
 
-        <div class="container">
-          <a href="histobox.html">
+        <div class="container item-left">
+          <a href="/histobox.html">
             <img
               class="project histo-proj-img"
               src="img/histo-logo.png"
@@ -153,8 +154,8 @@
           </a>
         </div>
 
-        <div class="container">
-          <a href="ideal.html">
+        <div class="container item-right">
+          <a href="/ideal.html">
             <img
               class="project"
               src="img/ideal-square.png"
@@ -169,10 +170,44 @@
           </a>
         </div>
 
+        <!--CARD TEST
+        <div class="container item-left">
+          <a href="/ideal.html">
+            <div class="portfolio-card">
+            <img
+              class="card-img"
+              src="img/ideal-square.png"
+              alt="research lab website"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Website</h5>
+              <p class="card-text">
+                Dr. Bencharit's research lab website
+              </p>
+            </div>
+          </div>
+            
+          </a>
+        </div>
+
+        <div class="container item-right">
+          <a href="/ideal.html">
+            <img
+              class="project"
+              src="img/ideal-square.png"
+              alt="research lab website"
+            />
+            <div class="overlay">
+              <div class="text">
+                <div class="proj-title">Website</div>
+                Dr. Bencharit's research lab website
+              </div>
+            </div>
+          </a>
+        </div>
+-->
 
       </div>
     </main>
-
-    <script src="js/main.js"></script>
   </body>
 </html>

@@ -125,18 +125,18 @@ h3 {
   }
 }
 
-.hi-heading {
-  margin-top: 2rem;
-  font-size: 1.7em;
-  font-weight: 600;
-  justify-content: left;
-}
-
 .link {
   color: var(--color-secondary);
   text-decoration: none;
   padding: 0px;
   display: inline;
+}
+
+.hi-heading {
+  margin-top: 2rem;
+  font-size: 1.7em;
+  font-weight: 600;
+  justify-content: left;
 }
 
 .msg-heading {
@@ -188,24 +188,32 @@ h3 {
 .portfolio {
   margin: auto;
   display: grid;
-  width: 1100px;
+  width: 1000px;
   grid-template-columns: 1fr 1fr;
 }
 
 .portfolio img {
-  width: 500px;
-  height: 500px;
+  width: 480px;
+  height: 480px;
   border-radius: $round-corners;
 }
 
 .container {
   position: relative;
   display: inline-block;
-  width: 500px;
-  height: 500px;
+  width: 480px;
+  height: 480px;
+  margin: 20px 0px;
   box-shadow: $box-shadow;
-  margin: 25px;
   border-radius: $round-corners;
+}
+
+.item-left {
+  justify-self: start;
+}
+
+.item-right {
+  justify-self: end;
 }
 
 .histo-proj-img {
@@ -291,17 +299,16 @@ strong {
 }
 
 .about-info {
+  width: 1000px;
+  margin: 60px auto;
   display: grid;
   grid-template-areas: "bio-img bio";
   grid-template-columns: 1fr 1fr;
 
   .bio-img {
-    grid-area: bio-img;
-    margin: auto;
     width: 435px;
-    height: auto;
+    justify-self: start;
     box-shadow: $btn-shadow-2;
-    margin-right: 170px;
     border-radius: $round-corners;
   }
 
@@ -311,12 +318,15 @@ strong {
     font-weight: 400;
     width: 500px;
     line-height: 37px;
-    margin-top: 30px;
   }
 
   .about-link {
     color: var(--color-secondary);
     text-decoration: none;
+  }
+
+  .about-link:hover {
+    text-decoration: underline;
   }
 
   .contact-btn {
@@ -532,9 +542,10 @@ strong {
 
 //Contact
 
-#contact h2 {
+.contact-msg {
   margin-top: 50px;
 }
+
 form {
   text-align: center;
   margin-top: 50px;
@@ -1071,5 +1082,65 @@ input:checked + .slider:before {
   margin-top: 40px;
   width: 500px;
 }
+
+//Text-Gradient Test
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    #d02977 20%,
+    #009eea 40%,
+    #5160d3 60%,
+    #d02977 80%
+  );
+  color: rgba(var(--color-text), 1);
+  background-size: 200% auto;
+  animation: flow 2.2s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: color 0.5s ease-in-out;
+
+  @keyframes flow {
+    to {
+      background-position: 200% 200%;
+    }
+  }
+}
+.gradient-text:hover {
+  color: rgba(0, 0, 0, 0);
+}
+
+//Portfolio Card WIP
+/*
+.portfolio-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.5rem;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+}
+
+.portfolio .card-img {
+  flex-shrink: 0;
+  width: 100%;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+*/
 
 @import "mobile";

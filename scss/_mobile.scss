@@ -1,11 +1,5 @@
 //Widescreens
 @include mediaXl {
-  .bio-img {
-    position: relative;
-    left: 120px;
-    width: 500px;
-  }
-
   .fa-angle-down {
     font-size: 50px;
     color: rgb(77, 77, 77);
@@ -76,6 +70,8 @@
   }
 
   .about-info {
+    width: 800px;
+    margin: 60px auto;
     grid-template-areas:
       "bio-img"
       "bio";
@@ -84,14 +80,20 @@
   }
 
   .about-info .bio-img {
-    margin-right: auto;
-    margin-top: 85px;
+    margin: auto;
+    margin-top: 20px;
     width: 450px;
   }
 
   .about-info .bio {
     margin: auto;
-    width: 850px;
+    width: 800px;
+  }
+
+  .bio-heading {
+    display: flex;
+    margin: 20px auto 10px auto;
+    justify-content: center;
   }
 
   .bio {
@@ -235,6 +237,8 @@
   }
 
   .about-info {
+    width: 520px;
+    margin: 60px auto;
     grid-template-areas:
       "bio-img"
       "bio";
@@ -243,19 +247,25 @@
   }
 
   .about-info .bio-img {
-    margin-right: auto;
-    margin-top: 85px;
+    margin: auto;
+    margin-top: 20px;
     width: 450px;
   }
 
   .about-info .bio {
     margin: auto;
-    width: 470px;
+    width: 520px;
+  }
+
+  .bio-heading {
+    display: flex;
+    margin: 20px auto 10px auto;
+    justify-content: center;
   }
 
   .bio {
     & p {
-      margin-bottom: 25px;
+      margin-bottom: 10px;
     }
   }
 
@@ -396,11 +406,11 @@
     margin: auto;
     margin-top: 3.2rem;
     padding-bottom: 10px;
-    width: 300px;
+    width: 340px;
   }
 
   .home-format {
-    width: 300px;
+    width: 340px;
   }
 
   .hi-heading {
@@ -480,10 +490,20 @@
     text-align: center;
   }
 
-  .bio {
-    & p {
-      font-size: 14px;
-    }
+  .about-info {
+    width: 520px;
+    margin: 60px auto;
+    grid-template-areas:
+      "bio-img"
+      "bio";
+
+    grid-template-columns: 1fr;
+  }
+
+  .about-info .bio-img {
+    margin: auto;
+    margin-top: 20px;
+    width: 450px;
   }
 
   .about-info .bio {
@@ -491,10 +511,23 @@
     width: 90%;
   }
 
+  .bio-heading {
+    display: flex;
+    margin: 20px auto 10px auto;
+    justify-content: center;
+  }
+
+  .bio {
+    & p {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+  }
+
   .about-info .bio-img {
     width: 80%;
     margin-right: auto;
-    margin-top: 85px;
+    margin-top: 40px;
   }
 
   //The process mobile
