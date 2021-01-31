@@ -910,37 +910,6 @@ input:checked + .slider:before {
 .gradient-text:hover {
   color: rgba(0, 0, 0, 0); }
 
-/*
-.portfolio-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border-radius: 0.5rem;
-}
-
-.card-body {
-  flex: 1 1 auto;
-  min-height: 1px;
-  padding: 1.25rem;
-}
-
-.card-title {
-  margin-bottom: 0.75rem;
-}
-
-.portfolio .card-img {
-  flex-shrink: 0;
-  width: 100%;
-  border-top-left-radius: 0.375rem;
-  border-top-right-radius: 0.375rem;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-*/
 @media screen and (min-width: 1171px) {
   .fa-angle-down {
     font-size: 50px;
