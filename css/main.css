@@ -4,6 +4,7 @@
   --color-secondary: #3a86ff;
   --color-tertiary: #78acff;
   --color-text: #333;
+  --color-text-light: #6c6c70;
   --button-hover: #d8d8d8;
   --color-overlay-text: #ffffff;
   --color-line-break: #e5e5e5;
@@ -23,6 +24,7 @@ html[data-theme="dark"] {
   background: var(--color-primary);
   --color-primary: #121212;
   --color-text: #ececec;
+  --color-text-light: #aeaeb2;
   --color-primary-darken: #242424;
   --color-overlay-text: #333; }
 
@@ -227,15 +229,10 @@ strong {
 
 .icons a {
   color: var(--color-text);
-  text-decoration: none;
-  padding: 0px 10px; }
+  text-decoration: none; }
   .icons a:hover {
     color: var(--color-secondary);
     transition: all 0.3s ease-out; }
-
-.icons {
-  width: 100%;
-  text-align: center; }
 
 .icons .fa {
   display: inline-block;
@@ -415,10 +412,8 @@ strong {
 .thank-you {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 60px auto;
   justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 80px;
   font-size: 30px; }
 
 .thanks {
@@ -910,6 +905,30 @@ input:checked + .slider:before {
 .gradient-text:hover {
   color: rgba(0, 0, 0, 0); }
 
+.main-content {
+  min-height: calc(100vh - 224px); }
+
+.footer {
+  margin: 40px auto 20px auto;
+  font-size: 12px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between; }
+
+.ft-icons-1 {
+  color: var(--color-text-light);
+  font-size: 18px;
+  padding: 0px 8px 0px 0px; }
+
+.ft-icons {
+  color: var(--color-text-light);
+  font-size: 18px;
+  padding: 0px 8px; }
+
+.footer-text {
+  color: var(--color-text-light);
+  font-size: 12px; }
+
 @media screen and (min-width: 1171px) {
   .fa-angle-down {
     font-size: 50px;
@@ -1097,7 +1116,9 @@ input:checked + .slider:before {
   .stagger-info {
     margin-bottom: 40px; }
   .switch-sides {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .footer {
+    width: 800px; } }
 
 @media screen and (max-width: 768px) {
   .menu-btn {
@@ -1207,7 +1228,7 @@ input:checked + .slider:before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
-    width: 660px; }
+    width: 650px; }
   .portfolio img {
     width: 300px;
     height: 300px;
@@ -1310,7 +1331,9 @@ input:checked + .slider:before {
     flex-direction: column; }
   .ideal-cover-img {
     padding: 0px;
-    margin: 20px 0px; } }
+    margin: 20px 0px; }
+  .footer {
+    width: 520px; } }
 
 @media screen and (max-width: 500px) {
   .menu-btn {
@@ -1458,28 +1481,27 @@ input:checked + .slider:before {
     font-weight: 600;
     text-align: center; }
   .about-info {
-    width: 520px;
+    width: 350px;
     margin: 60px auto;
     grid-template-areas: "bio-img" "bio";
     grid-template-columns: 1fr; }
   .about-info .bio-img {
     margin: auto;
     margin-top: 20px;
-    width: 450px; }
+    width: 350px; }
   .about-info .bio {
     margin: auto;
-    width: 90%; }
+    width: 98%; }
   .bio-heading {
     display: flex;
-    margin: 20px auto 10px auto;
-    justify-content: center; }
+    margin: 20px auto 0px auto;
+    justify-content: center;
+    font-size: 1.27rem; }
+  .bio-description {
+    margin: 0px auto; }
   .bio p {
     margin-bottom: 10px;
     font-size: 14px; }
-  .about-info .bio-img {
-    width: 80%;
-    margin-right: auto;
-    margin-top: 40px; }
   .design-example {
     width: 320px;
     margin: auto;
@@ -1533,20 +1555,9 @@ input:checked + .slider:before {
     font-size: 18px; }
   .thank-you {
     font-size: 20px;
-    margin-bottom: 300px; }
+    margin-bottom: 30px; }
   #mybtn {
     margin-bottom: 100px; }
-  .danceparty-header-img {
-    width: 250px; }
-  .nick-styl {
-    width: 320px;
-    display: flex;
-    justify-content: center;
-    margin: auto; }
-  .dance-video {
-    width: 320px; }
-  .nick-sitemap {
-    width: 320px; }
   .ideal-img {
     width: 300px;
     border: 4px solid;
@@ -1660,4 +1671,7 @@ input:checked + .slider:before {
     font-size: 21px;
     margin-top: 20px; }
   .switch-sides {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .footer {
+    margin: 20px auto 40px auto;
+    width: 350px; } }

@@ -175,6 +175,10 @@
   .switch-sides {
     flex-direction: column;
   }
+
+  .footer {
+    width: 800px;
+  }
 }
 
 // Tablets & Small Laptops
@@ -214,7 +218,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: auto;
-    width: 660px;
+    width: 650px;
   }
 
   .portfolio img {
@@ -392,6 +396,10 @@
     padding: 0px;
     margin: 20px 0px;
   }
+
+  .footer {
+    width: 520px;
+  }
 }
 
 // Smartphones
@@ -491,7 +499,7 @@
   }
 
   .about-info {
-    width: 520px;
+    width: 350px;
     margin: 60px auto;
     grid-template-areas:
       "bio-img"
@@ -503,18 +511,23 @@
   .about-info .bio-img {
     margin: auto;
     margin-top: 20px;
-    width: 450px;
+    width: 350px;
   }
 
   .about-info .bio {
     margin: auto;
-    width: 90%;
+    width: 98%;
   }
 
   .bio-heading {
     display: flex;
-    margin: 20px auto 10px auto;
+    margin: 20px auto 0px auto;
     justify-content: center;
+    font-size: 1.27rem;
+  }
+
+  .bio-description {
+    margin: 0px auto;
   }
 
   .bio {
@@ -522,12 +535,6 @@
       margin-bottom: 10px;
       font-size: 14px;
     }
-  }
-
-  .about-info .bio-img {
-    width: 80%;
-    margin-right: auto;
-    margin-top: 40px;
   }
 
   //The process mobile
@@ -612,33 +619,13 @@
   }
   .thank-you {
     font-size: 20px;
-    margin-bottom: 300px;
+    margin-bottom: 30px;
   }
 
   #mybtn {
     margin-bottom: 100px;
   }
 
-  //dance party
-
-  .danceparty-header-img {
-    width: 250px;
-  }
-
-  .nick-styl {
-    width: 320px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-  }
-
-  .dance-video {
-    width: 320px;
-  }
-
-  .nick-sitemap {
-    width: 320px;
-  }
   //ideal lab
   .ideal-img {
     width: 300px;
@@ -825,5 +812,10 @@
 
   .switch-sides {
     flex-direction: column;
+  }
+
+  .footer {
+    margin: 20px auto 40px auto;
+    width: 350px;
   }
 }

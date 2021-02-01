@@ -9,6 +9,7 @@ html[data-theme="dark"] {
   background: var(--color-primary);
   --color-primary: #121212;
   --color-text: #ececec;
+  --color-text-light: #aeaeb2;
   --color-primary-darken: #242424;
   --color-overlay-text: #333;
 }
@@ -264,17 +265,11 @@ strong {
 .icons a {
   color: var(--color-text);
   text-decoration: none;
-  padding: 0px 10px;
 
   &:hover {
     color: var(--color-secondary);
     @include easeOut();
   }
-}
-
-.icons {
-  width: 100%;
-  text-align: center;
 }
 
 .icons .fa {
@@ -498,10 +493,8 @@ strong {
 .thank-you {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 60px auto;
   justify-content: center;
-  margin-top: 60px;
-  margin-bottom: 80px;
   font-size: 30px;
 }
 
@@ -1109,6 +1102,35 @@ input:checked + .slider:before {
 }
 .gradient-text:hover {
   color: rgba(0, 0, 0, 0);
+}
+
+.main-content {
+  min-height: calc(100vh - 224px);
+}
+
+.footer {
+  margin: 40px auto 20px auto;
+  font-size: 12px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ft-icons-1 {
+  color: var(--color-text-light);
+  font-size: 18px;
+  padding: 0px 8px 0px 0px;
+}
+
+.ft-icons {
+  color: var(--color-text-light);
+  font-size: 18px;
+  padding: 0px 8px;
+}
+
+.footer-text {
+  color: var(--color-text-light);
+  font-size: 12px;
 }
 
 @import "mobile";
