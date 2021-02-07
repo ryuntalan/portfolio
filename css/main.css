@@ -41,7 +41,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: "Inter", "Muli", "Raleway", "Helvetica Neue", "Segoe UI", Tahoma, Verdana, sans-serif; }
+  font-family: "Inter", "Muli", "Raleway", "Helvetica Neue", "Segoe UI", Verdana, sans-serif; }
 
 .line-break {
   border: 1px solid var(--color-line-break);
