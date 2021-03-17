@@ -206,7 +206,14 @@ h3 {
   height: 480px;
   margin: 20px 0px;
   box-shadow: $box-shadow;
+  transition: 0.5s ease;
   border-radius: $round-corners;
+}
+
+.container:hover{
+  box-shadow: $box-shadow-elevate;
+  transition: 0.5s ease;
+  transform: translateY(-0.25em);
 }
 
 .item-left {
@@ -220,7 +227,7 @@ h3 {
 .histo-proj-img {
   background-color: #f1f1f1;
 }
-
+/*
 .overlay {
   position: absolute;
   top: 0;
@@ -239,11 +246,13 @@ h3 {
   opacity: 0.9;
 }
 
+
 .proj-title {
   text-align: center;
   font-weight: 600;
   font-size: 22px;
 }
+
 
 .text {
   color: var(--color-overlay-text);
@@ -257,9 +266,12 @@ h3 {
   width: 240px;
 }
 
+*/
+
 strong {
   font-weight: 400;
 }
+
 
 //icons
 .icons a {
