@@ -708,8 +708,12 @@
     font-weight: 600;
   }
 
+  .hero-title {
+    font-size: 30px;
+  }
+
   .case-section-title {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600;
   }
 
@@ -721,11 +725,15 @@
   }
 
   .case-section-emphasis {
-    font-size: 21px;
+    font-size: 18px;
   }
 
   .center-question-emphasis {
-    font-size: 21px;
+    font-size: 18px;
+  }
+
+  .case-section-sub-title{
+    font-size: 20px;
   }
 
   .histo-3d-img {

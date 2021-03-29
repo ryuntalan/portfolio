@@ -701,6 +701,11 @@ input:checked + .slider:before {
   width: 1000px;
 }
 
+.case-section {
+  margin: auto;
+  width: 1000px;
+}
+
 .cover-header {
   display: flex;
   flex-direction: row;
@@ -730,12 +735,8 @@ input:checked + .slider:before {
   margin-bottom: 50px;
 }
 
-.case-section {
-  width: 1000px;
-}
-
 .case-section-title {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -750,20 +751,19 @@ input:checked + .slider:before {
 .case-section-emphasis {
   margin-bottom: 20px;
   font-weight: 600;
-  font-size: 24px;
-  font-style: italic;
+  font-size: 20px;
 }
 
 .case-section-sub-title {
   margin-bottom: 10px;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .case-center-img {
   display: flex;
   align-items: center;
-  margin: auto;
+  margin: 30px auto 40px;
   width: 720px;
   border-radius: $round-corners;
 }
@@ -773,6 +773,7 @@ input:checked + .slider:before {
   justify-content: center;
   margin: auto;
   margin-top: 20px;
+  font-size: 14px;
   font-weight: 600;
 }
 
@@ -805,7 +806,7 @@ input:checked + .slider:before {
   margin-top: 70px;
   margin-bottom: 70px;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .demo-btn {
@@ -897,7 +898,7 @@ input:checked + .slider:before {
   text-align: left;
   font-weight: 600;
   line-height: 180%;
-  font-size: 21px;
+  font-size: 18px;
 }
 
 .top-space {
@@ -1065,8 +1066,9 @@ input:checked + .slider:before {
 }
 
 .hero-title {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .hero-subtitle {

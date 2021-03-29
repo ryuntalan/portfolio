@@ -7,7 +7,7 @@
   --color-text-light: #6c6c70;
   --button-hover: #d8d8d8;
   --color-overlay-text: #ffffff;
-  --color-line-break: #e5e5e5;
+  --color-line-break: #f2f2f2;
   --color-button: #efefef; }
 
 /*
@@ -583,6 +583,10 @@ input:checked + .slider:before {
   margin: auto;
   width: 1000px; }
 
+.case-section {
+  margin: auto;
+  width: 1000px; }
+
 .cover-header {
   display: flex;
   flex-direction: row;
@@ -607,11 +611,8 @@ input:checked + .slider:before {
   margin-top: 50px;
   margin-bottom: 50px; }
 
-.case-section {
-  width: 1000px; }
-
 .case-section-title {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 600;
   margin-bottom: 20px; }
 
@@ -624,18 +625,17 @@ input:checked + .slider:before {
 .case-section-emphasis {
   margin-bottom: 20px;
   font-weight: 600;
-  font-size: 24px;
-  font-style: italic; }
+  font-size: 20px; }
 
 .case-section-sub-title {
   margin-bottom: 10px;
   font-weight: 600;
-  font-size: 24px; }
+  font-size: 22px; }
 
 .case-center-img {
   display: flex;
   align-items: center;
-  margin: auto;
+  margin: 30px auto 40px;
   width: 720px;
   border-radius: 2px; }
 
@@ -644,6 +644,7 @@ input:checked + .slider:before {
   justify-content: center;
   margin: auto;
   margin-top: 20px;
+  font-size: 14px;
   font-weight: 600; }
 
 .case-image-sec {
@@ -672,7 +673,7 @@ input:checked + .slider:before {
   margin-top: 70px;
   margin-bottom: 70px;
   font-weight: 600;
-  font-size: 32px; }
+  font-size: 36px; }
 
 .demo-btn {
   border: none;
@@ -747,7 +748,7 @@ input:checked + .slider:before {
   text-align: left;
   font-weight: 600;
   line-height: 180%;
-  font-size: 21px; }
+  font-size: 18px; }
 
 .top-space {
   margin-top: 40px; }
@@ -882,8 +883,9 @@ input:checked + .slider:before {
   padding: 40px 0px; }
 
 .hero-title {
-  font-size: 48px;
-  font-weight: 600; }
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 8px; }
 
 .hero-subtitle {
   display: flex;
@@ -1622,8 +1624,10 @@ input:checked + .slider:before {
     padding: 10px 12px;
     font-size: 12px;
     font-weight: 600; }
+  .hero-title {
+    font-size: 30px; }
   .case-section-title {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 600; }
   .case-description {
     font-weight: 400;
@@ -1631,9 +1635,11 @@ input:checked + .slider:before {
     line-height: 170%;
     margin-bottom: 15px; }
   .case-section-emphasis {
-    font-size: 21px; }
+    font-size: 18px; }
   .center-question-emphasis {
-    font-size: 21px; }
+    font-size: 18px; }
+  .case-section-sub-title {
+    font-size: 20px; }
   .histo-3d-img {
     width: 280px;
     display: flex;
