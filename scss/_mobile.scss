@@ -119,7 +119,7 @@
 
   #case-study {
     margin-top: 50px;
-    width: 720px;
+    width: 680px;
   }
 
   .case-title {
@@ -131,7 +131,35 @@
   }
 
   .case-section {
-    width: 720px;
+    width: 680px;
+  }
+
+  .feature-section{
+    width: 680px;
+  }
+
+  .case-center-img {
+    width: 680px;
+  }
+
+  .case-center-img-med {
+    width: 680px;
+  }
+
+  .case-center-vid {
+    width: 680px;
+  }
+
+  .jupyter-video {
+    width: 680px;
+  }
+
+  .case-demo-section{
+    width: 680px;
+  }
+
+  .slideshow-section{
+    width: 680px;
   }
 
   .histo-header {
@@ -149,7 +177,7 @@
   }
 
   .hero-shot {
-    width: 720px;
+    width: 680px;
   }
 
   .case-stagger {
@@ -333,7 +361,36 @@
     width: 520px;
   }
 
+
+  .case-center-img-med {
+    width: 520px;
+  }
+
+  .case-center-vid {
+    width: 520px;
+  }
+
+  .feature-section{
+    width: 520px;
+  }
+
+  .case-demo-section{
+    width: 520px;
+  }
+
+  .slideshow-section{
+    width: 520px;
+  }
+
   .jupyter-video {
+    width: 520px;
+  }
+
+  .line-break {
+    width: 520px;
+  }
+  
+  .line-sep {
     width: 520px;
   }
 
@@ -690,11 +747,39 @@
     width: 350px;
   }
 
+  .case-center-img-med {
+    width: 350px;
+  }
+
+  .case-center-vid {
+    width: 350px;
+  }
+
+  .feature-section{
+    width: 350px;
+  }
+
+  .case-demo-section{
+    width: 350px;
+  }
+
+  .slideshow-section{
+    width: 350px;
+  }
+
   .hero-shot {
     width: 350px;
   }
 
   .jupyter-video {
+    width: 350px;
+  }
+
+  .line-break {
+    width: 350px;
+  }
+  
+  .line-sep {
     width: 350px;
   }
 
@@ -754,7 +839,7 @@
     text-align: left;
     font-weight: 600;
     line-height: 170%;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .ideal-cover-img {

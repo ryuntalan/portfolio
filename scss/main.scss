@@ -26,17 +26,13 @@ body {
   margin: 0;
   line-height: 1.5;
   font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 * {
   box-sizing: border-box;
   font-family: "Inter", "Muli", "Raleway", "Helvetica Neue", "Segoe UI",
     Verdana, sans-serif;
-}
-
-.line-break {
-  border: 1px solid var(--color-line-break);
-  margin-bottom: 50px;
 }
 
 //navbar
@@ -289,6 +285,12 @@ strong {
   vertical-align: middle;
 }
 
+.fab:hover,
+.fas:hover {
+  color: var(--color-secondary);
+  @include easeOut();
+}
+
 //About
 
 #about h2 {
@@ -507,7 +509,8 @@ strong {
   flex-direction: column;
   margin: 60px auto;
   justify-content: center;
-  font-size: 30px;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 .thanks {
@@ -701,10 +704,27 @@ input:checked + .slider:before {
   width: 1000px;
 }
 
+//Case Study Sections
 .case-section {
+  margin: auto;
+  width: 680px;
+}
+
+.feature-section {
   margin: auto;
   width: 1000px;
 }
+
+.case-demo-section{
+  margin: auto;
+  width: 680px;
+}
+
+.slideshow-section{
+  margin: auto;
+  width: 800px;
+}
+
 
 .cover-header {
   display: flex;
@@ -712,10 +732,6 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
   padding: 80px 0px;
-}
-
-.jupyter-orange {
-  color: #f37626;
 }
 
 .case-title {
@@ -729,7 +745,14 @@ input:checked + .slider:before {
   width: 520px;
 }
 
+.line-break {
+  width: 680px;
+  border: 1px solid var(--color-line-break);
+  margin-bottom: 50px;
+}
+
 .line-sep {
+  width: 680px;
   border: 1px solid var(--color-line-break);
   margin-top: 50px;
   margin-bottom: 50px;
@@ -743,7 +766,7 @@ input:checked + .slider:before {
 
 .case-description {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 170%;
   margin-bottom: 15px;
 }
@@ -763,8 +786,24 @@ input:checked + .slider:before {
 .case-center-img {
   display: flex;
   align-items: center;
-  margin: 30px auto 40px;
+  margin: -20px auto 0px;
   width: 720px;
+  border-radius: $round-corners;
+}
+
+.case-center-img-med {
+  display: flex;
+  align-items: center;
+  margin: -20px auto 0px;
+  width: 1000px;
+  border-radius: $round-corners;
+}
+
+.case-center-vid {
+  display: flex;
+  align-items: center;
+  width: 720px;
+  margin: -20px auto 0px;
   border-radius: $round-corners;
 }
 
@@ -825,11 +864,11 @@ input:checked + .slider:before {
 }
 
 .demo-buttons {
-  width: 720px;
+  width: 680px;
   display: flex;
   flex-direction: row;
   margin: auto;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .case-stagger {
@@ -1043,7 +1082,9 @@ input:checked + .slider:before {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  bottom: 0;
+  right: 70px;
+  display: none; //hidden for now
 }
 
 .caption-text {
@@ -1059,7 +1100,7 @@ input:checked + .slider:before {
 }
 
 .hero-shot {
-  width: 800px;
+  width: 680px;
   margin: auto;
   align-content: center;
   padding: 40px 0px;
