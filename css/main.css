@@ -1083,7 +1083,7 @@ input:checked + .slider:before {
   .hi-heading {
     display: flex;
     margin-top: 3rem;
-    justify-content: center;
+    width: 800px;
     margin: auto; }
   .msg-heading {
     display: flex;
