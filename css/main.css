@@ -939,7 +939,7 @@ input:checked + .slider:before {
   width: 500px; }
 
 .gradient-text {
-  background: linear-gradient(to right, #d02977 20%, #009eea 40%, #5160d3 60%, #d02977 80%);
+  background: linear-gradient(to right, #00A6FF 0%, #00C5FF 20%, #00A6FF 40%, #008BFF 60%, #0073FF 80%, #008BFF 100%);
   color: rgba(var(--color-text), 1);
   background-size: 200% auto;
   animation: flow 2.2s linear infinite;
