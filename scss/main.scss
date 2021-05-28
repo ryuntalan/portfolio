@@ -12,6 +12,7 @@ html[data-theme="dark"] {
   --color-text-light: #aeaeb2;
   --color-primary-darken: #242424;
   --color-overlay-text: #333;
+  --color-stroke:#333
 }
 
 main {
@@ -27,6 +28,10 @@ body {
   line-height: 1.5;
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
+}
+
+img {
+  image-rendering: auto;
 }
 
 * {
@@ -152,7 +157,6 @@ h3 {
 .home-greeting {
   width: 1000px;
   padding-top: 10px;
-  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -190,24 +194,23 @@ h3 {
 }
 
 .portfolio img {
-  width: 480px;
-  height: 480px;
+  width: 440px;
+  height: 495px;
   border-radius: $round-corners;
 }
 
 .container {
   position: relative;
   display: inline-block;
-  width: 480px;
-  height: 480px;
-  margin: 20px 0px;
-  box-shadow: $box-shadow;
+  width: 440px;
+  height: 495px;
+  margin: 80px 0px;
   transition: 0.5s ease;
   border-radius: $round-corners;
 }
 
 .container:hover{
-  box-shadow: $box-shadow-elevate;
+  box-shadow: $box-shadow;
   transition: 0.5s ease;
   transform: translateY(-0.25em);
 }
@@ -220,9 +223,30 @@ h3 {
   justify-self: end;
 }
 
+.thumb-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 12px;
+  margin-bottom: 2px;
+}
+
+.thumb-description {
+  color: var(--color-text-light);
+  font-size: 14px;
+}
+
 .histo-proj-img {
   background-color: #f1f1f1;
 }
+
+.jupyter-thumb{
+  border: solid var(--color-stroke) 1px;
+}
+
+.ideal-thumb{
+  border: solid var(--color-text) 1px;
+}
+
 /*
 .overlay {
   position: absolute;
