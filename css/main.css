@@ -212,6 +212,9 @@ h3 {
 .jupyter-thumb {
   border: solid var(--color-stroke) 1px; }
 
+.add-border {
+  border: solid var(--color-stroke) 1px; }
+
 .ideal-thumb {
   border: solid var(--color-text) 1px; }
 
@@ -800,10 +803,14 @@ input:checked + .slider:before {
   text-align: left;
   font-weight: 600;
   line-height: 180%;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-bottom: 18px; }
 
 .top-space {
   margin-top: 40px; }
+
+.bottom-space {
+  padding-bottom: 20px; }
 
 .insight-quote {
   width: 720px;
@@ -934,7 +941,7 @@ input:checked + .slider:before {
   width: 680px;
   margin: auto;
   align-content: center;
-  padding: 40px 0px; }
+  padding: 40px 0px 15px 0px; }
 
 .hero-title {
   font-size: 36px;

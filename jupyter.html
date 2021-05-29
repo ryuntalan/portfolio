@@ -90,10 +90,10 @@
                 <div class="bold">Ryan Untalan</div> 
                 <div>Aug. 28, 2020 <span>&#183;</span> 7 min</div>
             </div>
-            <img class= "hero-img" src="img/jupyter-hero.jpg"/>
          </div>
+         <img class= "hero-img" src="img/jupyter/jupyter-hero.png"/>
 
-      <hr class="line-break" />
+      <hr class="line-sep" />
 
       <div class="case-section">
         <div class="case-section-title">Overview</div>
@@ -108,8 +108,7 @@
           <b>Role:</b> UX/UI Designer, Front-end Developer, UX Researcher
         </div>
         <div class="case-description">
-          <b>Tools:</b> Figma, GitHub, Heuristic Evaluations, Personas, User
-          Journeys, User Stories, Miro, HTML/ CSS
+          <b>Tools:</b> Figma, GitHub, Heuristic Evaluations, Interviews, Journey Mapping, HTML/CSS, TypeScript
         </div>
         <div class="case-description"><b>Time Duration:</b> 10 weeks</div>
       </div>
@@ -125,6 +124,15 @@
           used to support a wide range of workflows in data science, scientific
           computing, and machine learning.
         </div>
+      </div>
+
+
+      <div class="case-image-sec">
+        <img
+          class="case-center-img"
+          src="img/jupyter/whatjupy.png"
+          alt="jupyterlab interface example, multiple tools showcasing data"
+        />
       </div>
 
       <hr class="line-sep" />
@@ -147,7 +155,7 @@
       <div class="case-image-sec">
         <img
           class="case-center-img"
-          src="img/problem.png"
+          src="img/jupyter/problem.png"
           alt="picture with a lot of code that's unreadable"
         />
         <div class="case-img-desc">
@@ -184,7 +192,7 @@
         <div class="case-section-title">Official Release</div>
         <div class="case-description">
           The official release of the extension was August
-          28th, 2020. Since then, it has received over 6,000 downloads. 
+          28th, 2020. Since then, it has received over 7,000 downloads. 
         </div>
       </div>
       <div class="case-center-vid">
@@ -226,16 +234,33 @@
           Project Assignment
         </div>
         <div class="case-description">
-          “Create a JupyterLab extension for editing in JupyterLab’s datagrid”
+          My team and I were assigned the broad project of "create an extension for editing data files within JupyterLab." The people who typically use JupyterLab include data scientists, researchers, and students. 
         </div>
 
         <div class="case-section-sub-title top-space">
-          Understanding our Users
+          Understanding the Context
         </div>
         <div class="case-description">
-          The foundation of our project begins with understanding the people were developing the extension for. I created personas, journey maps, user stories, and user flows to help the team visualize and understand our future users. 
+          To better understand the problems space, the people who use JupyterLab, and their current tools and workflows, I conducted five interviews, studied four existing spreadsheet editors, and leveraged the Jupyter community forum.
         </div>
       </div>
+
+      <div class="case-image-sec">
+        <img
+          class="case-center-img"
+          src="img/jupyter/leverage-forum.png"
+          alt="jupyterlab community forum research">
+      </div>
+
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          Journey Mapping
+        </div>
+        <div class="case-description">
+          I then synthesized the data into journey maps. This helped my team and I visualize the research insights and understand how a data editing tool within JupyterLab can alleviate the pain points faced by different people who use JupyterLab to accomplish various goals.
+        </div>
+      </div>
+
 
       <div class="slideshow-section">
         <!-- Slideshow container -->
@@ -245,19 +270,19 @@
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
             
-              <img class="slide-img" src="img/Sam-Journey-Map.jpg">
+              <img class="slide-img" src="img/jupyter/Sam-Journey-Map.jpg">
               
             </div>
 
             <div class="mySlides fade">
           
-              <img class="slide-img" src="img/Addison-Journey-Map.jpg" >
+              <img class="slide-img" src="img/jupyter/Addison-Journey-Map.jpg" >
             
             </div>
 
             <div class="mySlides fade">
               
-              <img class="slide-img" src="img/Hayden-Journey-Map.jpg" >
+              <img class="slide-img" src="img/jupyter/Hayden-Journey-Map.jpg" >
             
             </div>
 
@@ -278,33 +303,50 @@
         </div>
 
         <div class="case-section">
-        <div class="case-description">
-          Through this research phase, we discovered several pain points when using JupyterLab to clean and edit data files. These pain points were then translated into <a class="bold">opportunities</a> to improve the users workflow.
-        </div>
-        <div class="center-this">
-          <div class="numbered-list">
-            1. Data files are editable within JupyterLab
-            <br />
-            2. Several tools are accessible to organize data
-            <br />
-            3. Data files are connected through the cloud 
-            <br />
-            4. Code can be used to clean the data and create outputs
+          <div class="case-section-sub-title top-space">
+            Pain Points into Opportunities
           </div>
-        </div>
+          <div class="case-description">
+            My team and I then translated these pain points into opportunities. Based on our findings, the core opportunities we aimed to accomplish include:
+          </div>
+          <div class="center-this">
+            <div class="numbered-list">
+              1. Make data files editable within JupyterLab
+              <br />
+              2. Provide data editing tools to clean and organize data
+              <br />
+              3. Implement basic formula calculations
+              <br />
+              4. Support real-time collaboration
+            </div>
+          </div>
+          <div class="case-description">
+            Due to technical feasibility and given our 10 week time constraint, our team honed in on the first two opportunities.
+          </div>
 
         <div class="case-section-sub-title top-space">
           Opportunities into Key Features
         </div>
         <div class="case-description">
-          My team and I then brainstormed features to address each opportunity. Through discussion, we created a list that prioritized each feature based on user value and feasibility. The feature list gave structure to the project. It helped ensure that we were working on things that would help the user achieve an efficient data editing process.
+          From our opportunities, we created a prioritized list of features to be added. Each feature was determined and prioritized based on feasibility and its impact on helping someone edit, clean, and organize their data.
+The list helped my team and I align on what needed to be accomplished and helped ensure we were all working on features that would directly benefit our audience.
+        </div>
+      </div>
+
+        <div class="case-image-sec">
+          <img
+            class="case-center-img"
+            src="img/jupyter/feature-list.png"
+            alt="prioritized feature list"
+          />
         </div>
 
+      <div class="case-section">
         <div class="case-section-sub-title top-space">
-          Wireframing and Prototyping
+          Prototyping
         </div>
         <div class="case-description">
-          While the developers worked on setting up GitHub and the JupyterLab extension, I started to wireframe and prototype the key features. I used Figma and the Project Jupyter design system to create my designs. 
+          While the developers focused on how to create an extension, I got to prototyping. For each feature, I created an interactive prototype using Figma and the Project Jupyter design system. For my team, the best way to communicate how a feature should look and feel was through showing them an interactive prototype. Here are some examples:
         </div>
 
       </div>  
@@ -315,62 +357,49 @@
   
             <!-- Full-width images with number and caption text -->
             <div class="mySlides2 fade">
-              <div class="number-text">1 / 10</div>
-              <img src="img/gifs/edit-cell.gif" class="jp-gif"/>
-              <div class="caption-text">Edit a cell</div>
-            </div>
-  
-            <div class="mySlides2 fade">
-              <div class="number-text">2 / 10</div>
-              <img src="img/gifs/insert-delete.gif" class="jp-gif"/>
-              <div class="caption-text">Insert and delete rows and columns</div>
-            </div>
-  
-            <div class="mySlides2 fade">
-              <div class="number-text">3 / 10</div>
-              <img src="img/gifs/moving-data.gif" class="jp-gif"/>
-              <div class="caption-text">Move and rearrange data</div>
+              <div class="number-text">1 / 8</div>
+              <img src="img/gifs/context-menu-2.gif" class="jp-gif"/>
+              <div class="caption-text">Edit with the Context Menu</div>
             </div>
 
             <div class="mySlides2 fade">
-              <div class="number-text">4 / 10</div>
+              <div class="number-text">2 / 8</div>
+              <img src="img/gifs/moving-data.gif" class="jp-gif"/>
+              <div class="caption-text">Move and rearrange data</div>
+            </div>
+  
+            <div class="mySlides2 fade">
+              <div class="number-text">3 / 8</div>
+              <img src="img/gifs/insert-delete.gif" class="jp-gif"/>
+              <div class="caption-text">Insert and delete rows and columns</div>
+            </div>
+
+            <div class="mySlides2 fade">
+              <div class="number-text">4 / 8</div>
               <img src="img/gifs/filter-sort.gif" class="jp-gif"/>
               <div class="caption-text">Filter and sort data</div>
             </div>
 
             <div class="mySlides2 fade">
-              <div class="number-text">5 / 10</div>
+              <div class="number-text">5 / 8</div>
               <img src="img/gifs/search-replace.gif" class="jp-gif"/>
               <div class="caption-text">Search and replace</div>
             </div>
 
             <div class="mySlides2 fade">
-              <div class="number-text">6 / 10</div>
+              <div class="number-text">6 / 8</div>
               <img src="img/gifs/freeze.gif" class="jp-gif"/>
               <div class="caption-text">Freeze rows and columns</div>
             </div>
 
-
             <div class="mySlides2 fade">
-              <div class="number-text">7 / 10</div>
-              <img src="img/gifs/context-menu-2.gif" class="jp-gif"/>
-              <div class="caption-text">Updated context menu: Multi insert and remove</div>
-            </div>
-
-            <div class="mySlides2 fade">
-              <div class="number-text">8 / 10</div>
-              <img src="img/gifs/copy.gif" class="jp-gif"/>
-              <div class="caption-text">Copy and paste content</div>
-            </div>
-
-            <div class="mySlides2 fade">
-              <div class="number-text">9 / 10</div>
+              <div class="number-text">7 / 8</div>
               <img src="img/gifs/ghost-add.gif" class="jp-gif"/>
               <div class="caption-text">Add rows and columns</div>
             </div>
 
             <div class="mySlides2 fade">
-              <div class="number-text">10 / 10</div>
+              <div class="number-text">8 / 8</div>
               <img src="img/gifs/toggle.gif" class="jp-gif"/>
               <div class="caption-text">Format Data Toggle</div>
             </div>
@@ -383,25 +412,30 @@
       </div>  
     </div>
 
-      <div class="case-section">
-        <div class="case-section-sub-title top-space">
-          Designing for Both Light and Dark Theme
-        </div>
+    <div class="case-section">
+      <div class="case-section-sub-title top-space">
+        Review and Iterate
       </div>
-        <div class="case-image-sec">
-          <img
-            class="case-center-img"
-            src="img/light-dark-theme.png"
-            alt="structure of our app"
-          />
-        </div>
+      <div class="case-description">
+        A significant part of the prototyping process was having design reviews, getting feedback, and iterating on them. The timeline below showcases some of the more formal product demo reviews during week four and week eight. In addition, a lot of prototype refinement came from informal design critiques with core Jupyter members and other designers within my cohort.
+      </div>
+    </div>
+
+    <div class="case-image-sec">
+      <img
+        class="case-center-img"
+        src="img/jupyter/review.png"
+        alt="timeline of product demos on week 4 and 8"
+      />
+    </div>
+      
 
       <div class="case-section">
         <div class="case-section-sub-title top-space">
           Communicating through GitHub
         </div>
         <div class="case-description">
-          As a designer, I want to effectively communicate with my developers. GitHub is an amazing tool in presenting my designs to them. I created issues on our GitHub repository and uploaded prototypes, mockups, and design details. Not only was this method effective in communicating design specs, but it also consolidated all of the information into one place where the developers can quickly access it.
+          As a designer, I want to effectively communicate with my developers. GitHub was an amazing tool in presenting my designs to them. I created issues on our GitHub repository and uploaded interactive prototypes, mockups, and design details. Not only was this method effective in communicating design specs, but it also consolidated all of the information into one place where the developers can quickly access it.
         </div>
       </div>  
 
@@ -409,7 +443,7 @@
           <a href="https://github.com/jupytercalpoly/jupyterlab-tabular-data-editor/issues/200" target="_blank">
           <img
             class="case-center-img"
-            src="img/github-issue.png"
+            src="img/jupyter/github-issue.png"
             alt="structure of our app"
           />
         </a>
@@ -417,26 +451,69 @@
 
       <div class="case-section">
         <div class="case-section-sub-title top-space">
-          Design Reviews
-        </div>
-        <div class="case-description">
-          Throughout the 10 weeks, I presented my designs to core Jupyter members. These reviews helped my team and I discover ideas to further improve our users' experience. Each review fostered a process of continuous improvements and iterations.
-        </div>
-
-        <div class="case-section-sub-title top-space">
           Front-end Development
         </div>
         <div class="case-description">
-          I worked on the front-end for the data table, toolbar interface, and context menus. I also take great pride in making color styling changes so that it’s WCAG AAA approved!
+          I worked on the data table, toolbar interface, and context menus. I also take great pride in making color styling changes so that it’s WCAG AAA approved!
         </div>
 
         <div class="case-section-sub-title top-space">
-          Usability Testing
+          Usability Testing with Binder Links
         </div>
         <div class="case-description">
           After 8 weeks of design and development, we began usability testing! I led and executed all the moderated usability tests for our team. Each test was conducted through zoom, and our participants were able to access our extension through a binder link. I then translated the findings into actionables for the developers. The tests helped us find bugs and unexpected interactions. We learned about the many mini interactions people perform when using a data table editor, and it helped us create a more informed and polished experience.
         </div>
+      </div>
+      <div class="case-image-sec">
+        <img
+          class="case-center-img"
+          src="img/jupyter/binder-link.png"
+          alt="timeline of product demos on week 4 and 8"
+        />
+      </div>
 
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          Final Designs
+        </div>
+      </div>
+
+      <div class="case-image-sec bottom-space">
+        <img
+          class="case-center-img"
+          src="img/gifs/create.gif"
+          alt="gif of creating and editing a data file"
+        />
+        <div class="case-img-desc">
+          Quickly create and edit data files directly with JupyterLab
+        </div>
+      </div>
+
+      <div class="case-image-sec bottom-space">
+        <img
+          class="case-center-img"
+          src="img/gifs/navigate.gif"
+          alt="gif of navigating millions of cells with ease"
+        />
+        <div class="case-img-desc">
+          Navigate through large datasets with ease
+        </div>
+      </div>
+
+      <div class="case-image-sec">
+        <img
+          class="case-center-img"
+          src="img/gifs/format.gif"
+          alt="gif of formatting data quickly"
+        />
+        <div class="case-img-desc">
+          Manage your data side-by-side with Jupyter Notebooks
+        </div>
+      </div>
+
+
+
+      <div class="case-section">
         <div class="case-section-sub-title top-space">
           Design Documentation
         </div>
@@ -449,7 +526,7 @@
         <a href="https://jupyterlab-tabular-data-editor.readthedocs.io/en/latest/user/ux.html" target="_blank">
         <img
           class="case-center-img"
-          src="img/design-documentation.png"
+          src="img/jupyter/design-documentation.png"
           alt="structure of our app"
         />
       </a>
