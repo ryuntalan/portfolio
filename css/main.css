@@ -705,6 +705,32 @@ input:checked + .slider:before {
 .case-image-sec {
   margin: 40px auto; }
 
+.case-numbered-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: -12px;
+  margin-left: -8px; }
+
+.case-list-item {
+  float: left;
+  margin-top: 8px; }
+
+.case-bullet-list {
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+  overflow: visible; }
+
+.case-bullet-point {
+  float: left;
+  margin-left: 24px;
+  color: var(--color-text); }
+
+.bullet-quote {
+  color: var(--color-text-light);
+  font-style: italic;
+  font-size: 14px; }
+
 .cover-jupyter-img {
   border-radius: 2px;
   padding: 0px;
@@ -759,7 +785,7 @@ input:checked + .slider:before {
 
 .stagger-desc {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   margin: auto;
   margin-bottom: 4px; }
 
@@ -841,6 +867,9 @@ input:checked + .slider:before {
   display: none; }
 
 .mySlides2 {
+  display: none; }
+
+.mySlides3 {
   display: none; }
 
 .slide-img {

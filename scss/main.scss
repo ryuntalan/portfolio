@@ -848,6 +848,40 @@ input:checked + .slider:before {
   margin: 40px auto;
 }
 
+.case-numbered-list{
+  display:flex;
+  flex-direction: column;
+  margin-top: -12px; //this number is calculated based on the margin-top 8px from the .case-list-item class
+  margin-left: -8px;
+  
+}
+
+.case-list-item{
+  float: left;
+  margin-top: 8px;
+  
+}
+
+.case-bullet-list{
+  list-style-type: circle;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.case-bullet-point{
+  float: left;
+  margin-left: 24px;
+  color: var(--color-text);
+}
+
+.bullet-quote{
+  color: var(--color-text-light);
+  font-style: italic;
+  font-size: 14px;
+}
+
+
 .cover-jupyter-img {
   border-radius: $round-corners;
   padding: 0px;
@@ -912,7 +946,7 @@ input:checked + .slider:before {
 
 .stagger-desc {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   margin: auto;
   margin-bottom: 4px;
 }
@@ -927,7 +961,7 @@ input:checked + .slider:before {
   width: 65%;
   border-radius: $round-corners;
   box-shadow: $btn-shadow-2;
-}
+}   
 
 .feature-img {
   width: 600px;
@@ -1014,6 +1048,10 @@ input:checked + .slider:before {
 }
 
 .mySlides2 {
+  display: none;
+}
+
+.mySlides3 {
   display: none;
 }
 
