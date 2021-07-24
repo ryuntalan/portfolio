@@ -609,6 +609,10 @@ input:checked + .slider:before {
   margin: auto;
   width: 1000px; }
 
+.yt-video {
+  width: 100%;
+  height: 480px; }
+
 .case-section {
   margin: auto;
   width: 680px; }
@@ -1472,7 +1476,9 @@ input:checked + .slider:before {
     padding: 0px;
     margin: 20px 0px; }
   .footer {
-    width: 520px; } }
+    width: 520px; }
+  .yt-video {
+    height: 380px; } }
 
 @media screen and (max-width: 500px) {
   .menu-btn {
@@ -1831,4 +1837,6 @@ input:checked + .slider:before {
     flex-direction: column; }
   .footer {
     margin: 20px auto 40px auto;
-    width: 350px; } }
+    width: 350px; }
+  .yt-video {
+    height: 240px; } }
