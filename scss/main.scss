@@ -1,6 +1,12 @@
 // remember to npm run sass to compile scss to css
 @import "config";
 
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 html {
   scroll-behavior: smooth;
 }
