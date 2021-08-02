@@ -1,6 +1,8 @@
 // remember to npm run sass to compile scss to css
 @import "config";
 
+
+// This is what I needed to fix the font weight issue
 @import url('https://rsms.me/inter/inter.css');
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
