@@ -740,6 +740,11 @@ input:checked + .slider:before {
   width: 1000px;
 }
 
+.case-link {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
 //Video
 .yt-video{
   width: 100%;
@@ -1219,6 +1224,21 @@ input:checked + .slider:before {
 .histo-hero {
   margin-top: 40px;
   width: 500px;
+}
+
+//sonder
+
+.sonder-gif {
+  display: flex;
+  align-items: center;
+  margin:auto; 
+  width: 32%;
+}
+
+.sonder-bg {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #130F1E;
 }
 
 //Text-Gradient Test
