@@ -1858,7 +1858,7 @@ input:checked + .slider:before {
   .switch-sides {
     flex-direction: column; }
   .footer {
-    margin: 20px auto 40px auto;
+    margin: 64px auto 24px auto;
     width: 350px; }
   .yt-video {
     height: 240px; } }
