@@ -337,10 +337,12 @@ strong {
 
 .bio-heading {
   font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .bio-description {
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .about-info {
@@ -353,7 +355,7 @@ strong {
   .bio-img {
     width: 435px;
     justify-self: start;
-    box-shadow: $btn-shadow-2;
+    border: solid var(--color-stroke) 1px;
     border-radius: $round-corners;
   }
 
@@ -362,7 +364,7 @@ strong {
     font-size: 1.1rem;
     font-weight: 400;
     width: 500px;
-    line-height: 35px;
+    line-height: 170%;
   }
 
   .about-link {
