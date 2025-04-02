@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/5794067f82.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/hwt3keg.css" />
+    <script defer src="js/main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Grace Chatbot</title>
+    <meta
+      name="description"
+      content="Ryan Untalan's Personal Website. Hello! This website was created from scratch using HTML, CSS, and JavaScript. I use this website to showcase my projects and connect with people!"
+    />
+    <meta
+      name="keywords"
+      content="ryanuntalan, Ryan, Untalan, Alexander, Website, Portfolio, github, psychology, web developer, personal, pages, Cal, Poly, SLO"
+    />
+    <meta name="author" content="Ryan Untalan" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+    <meta
+      name="google-site-verification"
+      content="lTKWMBkCAhLhIuo_bLSbg6BP-FwfV7M1cWy0ti2zzZU"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <ul class="menu-nav">
+          <div class="nav-btn">
+            <li class="nav-item dark-toggle">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="slider round">
+                    <img class="sun-icons" src="img/sun.svg" />
+                    <img class="moon-icons" src="img/moon.svg" />
+                  </div>
+                </label>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="resources/Resume.pdf" target="_blank" class="nav-link">
+                Resume
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/about.html" class="nav-link">
+                About
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link project-link">
+                Projects
+              </a>
+            </li>
+          </div>
+          <div class="left-logo">
+          <li class="nav-item">
+            <a class="nav-link ryan-logo" href="/index.html">
+              <div class="nav-logo">Ryan Untalan</div>
+            </a>
+          </li>
+        </div>  
+        </ul>
+      </nav>
+    </header>
+
+<main>
+    <div id="case-study">
+        <div class="hero-shot">
+            <div class="hero-title">Grace Smart Assistant</div>
+            <div class="hero-subtitle">
+                <img src=img/ryan-icon.png> 
+                <div class="bold">Ryan Untalan</div> 
+                <div>Mar. 20, 2025 <span>&#183;</span> 10 min</div>
+            </div>
+         </div>
+         <img class= "hero-img" src="img/grace/grace-hero.png"/>
+
+      <hr class="line-sep" />
+
+      <div class="case-section">
+        <div class="case-section-title">Overview</div>
+
+        <div class="case-description">
+          <b>Project Description:</b> 
+          Doctors and care teams are burned out by the volume of MyChart messages. Grace is a chatbot that reduces this burden by helping patients find answers and complete administrative tasks on their own.
+        </div>
+
+        <div class="case-description">
+          <b>Role:</b> 
+          Lead Product Designer
+        </div>
+
+        <div class="case-description">
+          <p>
+            <b>Impact:</b> 
+          In 2022, I redesigned Grace, built its design system, designed conversational flows, and launched it on Providence MyChart. 
+          </p>
+          <p>
+          By year-end, we saw a 318% increase in monthly active users and a 110% increase in appointment conversions. Grace also helped deflect 22% of administrative messages and 8% of total MyChart messages.
+          </p>
+        </div>
+      </div>
+      <hr class="line-sep" />
+
+      <div class="case-section">
+        <div class="case-section-title">Introduction</div>
+        <div class="case-description">
+          <p>In December 2021, I joined the Providence Digital Innovation Group (DIG), a product development team pioneering digital solutions within the Providence health system. Our design team was small—just two designers and a manager.</p>
+          <p>One of my first projects was Grace, a click-bot initially created during COVID-19 to answer frequently asked questions.</p>
+        </div>
+      </div>
+
+
+      <div class="case-image-sec">
+        <img
+          class="case-center-img"
+          src="img/grace/grace-intro.png"
+          alt="grace"
+        />
+        <div class="case-img-desc bottom-space">
+          Grace Chabot Design when I first joined
+        </div>
+      </div>
+
+
+
+      <hr class="line-sep" />
+
+      <div class="case-section">
+        <div class="case-section-title">Problem Space</div>
+        <div class="case-description">
+          <p>While Grace served its initial purpose as a patient-facing FAQ bot, it wasn’t evolving to meet new challenges:</p>
+        </div>
+
+  
+        <div class="case-description">
+          <p class="case-section-first-bullet-point">Doctors and care teams are burned out by MyChart messages</p>
+          30% of messages were administrative (e.g., rescheduling, billing, prescription refills) and didn’t require clinical judgment.
+        </div>
+
+        <div class="case-description">
+          <p class="case-section-bullet-point">Grace had low visibility and engagement</p>
+          The bot was only deployed on a few webpages and had low open rates, meaning most patients never interacted with it.
+        </div>
+
+        <div class="case-description">
+          <p class="case-section-bullet-point">Grace lacked self-service features</p>
+          It only provided static FAQ responses and didn’t integrate with the EHR to support personalized actions like managing medications.
+        </div>
+
+        <div class="case-description">
+          <p class="case-section-bullet-point">​​The UI was outdated and rigid          </p>
+          Designed as a click-bot, Grace prioritized button-based navigation, making text input and natural conversation an afterthought. This led to a restrictive, transactional experience instead of a more engaging and conversational one.        </div>
+
+        <div class="case-description">
+          <p class="case-section-bullet-point">Lack of a structured design system slowed iterations
+          </p>
+          Grace’s design system was non-existent, making design iterations slow and inconsistent.
+        </div>
+      </div>
+
+        <div class="case-image-sec">
+          <img
+            class="case-center-img"
+            src="img/grace/grace-problem.png"
+            alt="grace"
+          />
+          <div class="case-img-desc bottom-space">
+            Provider burned out by messages (<a class="case-link" href="https://preview.reve.art/app/explore" target="_blank" > Created using Reve</a> )
+          </div>
+        </div>
+
+
+      
+
+      <hr class="line-sep" />
+
+      <div class="case-section">
+        <div class="case-section-title">Design Response</div>
+        <div class="case-description">
+          <p>To address these challenges, I led design initiatives to improve engagement, expand capabilities, and establish a scalable design system.
+          </p>
+        </div>
+      </div>
+
+
+        <div class="case-image-sec">
+
+          <img
+            class="case-center-img"
+            src="img/grace/grace-response-1.png"
+            alt="grace"
+          />
+          <div class="case-img-desc bottom-space">
+            Redesigned Grace to feel more conversational and welcoming
+          </div>
+        </div>
+
+        <div class="case-image-sec">
+          <img
+            class="case-center-img"
+            src="img/grace/grace-response-2.png"
+            alt="grace"
+          />
+          <div class="case-img-desc bottom-space">
+            Introduced contextual floating shortcut menus
+          </div>
+        </div>
+
+
+        <div class="case-image-sec">
+          <img
+            class="case-center-img"
+            src="img/grace/grace-response-3.png"
+            alt="grace"
+          />
+          <div class="case-img-desc bottom-space">
+            Launched Grace on MyChart
+          </div>
+        </div>
+
+
+        <div class="case-image-sec">
+          <img
+            class="case-center-img"
+            src="img/grace/grace-response-4.png"
+            alt="grace"
+          />
+          <div class="case-img-desc bottom-space">
+            Expanded self-service features
+          </div>
+        </div>
+
+ 
+        <div class="case-image-sec">
+          <img
+            class="case-center-img"
+            src="img/grace/grace-response-5.png"
+            alt="grace"
+          />
+          <div class="case-img-desc bottom-space">
+            Built the Grace design system
+          </div>
+        </div>
+
+
+      
+
+      <hr class="line-sep" />
+
+      <div class="case-section">
+        <div class="case-section-title">Impact</div>
+        <div class="case-description">
+          By year-end, these improvements <b>reduced administrative workload</b> for care teams and <b>drove higher patient engagement.</b>
+        </div>
+      </div>
+
+      <div class="case-image-sec">
+        <img
+          class="case-center-img-med"
+          src="img/grace/grace-metric-1.png"
+          alt="grace"
+        />
+        <div class="case-img-desc bottom-space">
+          Clinician feedback and message deflection metrics
+        </div>
+      </div>
+
+      <div class="case-image-sec">
+        <img
+          class="case-center-img-med"
+          src="img/grace/grace-metric-2.png"
+          alt="grace"
+        />
+        <div class="case-img-desc">
+          Grace 2022 engagement metrics
+        </div>
+      </div>
+     
+
+      <hr class="line-sep" />
+
+      <div class="center-question-emphasis">How did we get there?</div>
+
+      <hr class="line-sep" />
+
+      <div class="case-section">
+        <div class="case-section-title">The Journey</div>
+
+        <!--Context-->
+        <div class="case-section-sub-title">
+          Setting the Context
+        </div>
+        <div class="case-description">
+          Patients love the convenience of messaging their care team. Asynchronous communication through electronic medical record (EMR) platforms like MyChart has become a standard for managing health.
+        </div> 
+        <div class="case-description top-space-sm">
+          But care teams are overwhelmed. Doctors face rising message volume, 24-hour response expectations, and unpaid clinical work.
+        </div>
+      </div>
+
+        <div class="case-image-sec">
+          <img
+            class="case-center-img"
+            src="img/grace/grace-context.png"
+            alt="grace"
+          />
+          <div class="case-img-desc bottom-space">
+            MyChart Messages
+          </div>
+        </div>
+
+
+        <!--Mission-->
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          Mission Driven Team
+        </div>
+        <div class="case-description">
+          The Smart Assistant team's mission is to reduce the volume of messages sent to care teams — enabling clinicians to spend more time practicing at the top of their license.        
+        </div>
+      </div>
+        <!--Analysis-->
+        <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          Understanding the Message Burden
+        </div>
+        <div class="case-description">
+          To assess whether a chatbot could meaningfully help, our analytics team classified over 18,000 MyChart messages. We found that <b>30% were administrative and didn’t require clinical judgment</b> — a significant opportunity for automation and self-service.        
+        </div>
+      </div>
+
+        <div class="case-image-sec">
+          <img
+            class="case-center-img"
+            src="img/grace/grace-analysis.png"
+            alt="grace"
+          />
+          <div class="case-img-desc bottom-space">
+            MyChart Messages
+          </div>
+        </div>
+
+        <!--Framework-->
+        <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          The Self-Serve Framework        
+        </div>
+          <div class="case-description">
+            In complex problem spaces, I prioritize aligning on a clear framework to guide decision-making.
+          </div>
+          <div class="case-description top-space-sm">
+            In this case, we aligned on a self-serve strategy: <b>leverage Grace to help patients find answers before they send a message.</b>
+          </div>
+          <div class="case-description top-space-sm">
+            Grace would act as the <b>first line of defense</b>, reducing unnecessary messages before they reach the care team.
+          </div>
+        </div>
+
+          <!--Evaluaion-->
+          <div class="case-section">
+          <div class="case-section-sub-title top-space">
+            Evaluating Grace    
+          </div>
+            <div class="case-description">
+              When starting a new project, I begin by understanding the current capabilities, design patterns, technical foundation, and documentation.           
+             </div>
+            <div class="case-description top-space-sm">
+              When I joined, Grace was live on a few Providence.org pages and within the Providence mobile app. Its interface was button-driven, with limited self-serve capabilities.
+            </div>
+            <div class="case-description top-space-sm">
+              The engineering team had implemented Rasa, an open-source framework for natural language understanding and dialogue management. But documentation was scattered, and no design system existed — making it difficult to iterate quickly.
+            </div>
+          </div>
+
+            <div class="case-image-sec">
+              <img
+                class="case-center-img"
+                src="img/grace/grace-eval.png"
+                alt="grace"
+              />
+              <div class="case-img-desc bottom-space">
+                Identifying accessibility and usability issues
+              </div>
+            </div>
+
+            <!--KPI-->
+          <div class="case-section">
+            <div class="case-section-sub-title top-space">
+              Key Performance Indicators 
+            </div>
+            <div class="case-description">
+              Knowing our KPIs is essential to designing with impact — they define success, guide decisions, and ensure designs deliver measurable outcomes.
+            </div>
+            <div class="case-description top-space-sm">
+              At Providence, we focused on three primary KPIs: <b>Monthly Active Users (MAU), Goal Completion Rate (GCR), and Appointment Conversions.</b>
+            </div>
+          </div>
+
+            <!--Roadmap-->
+          <div class="case-section">
+            <div class="case-section-sub-title top-space">
+              Roadmap Planning and Prioritization
+            </div>
+            <div class="case-description">
+              In collaboration with product and engineering, we defined our 2022 roadmap. Guided by our mission to reduce administrative messages and improve KPIs, we prioritized expanding self-service flows and strategically implementing Grace within MyChart.
+            </div>
+            <div class="case-description top-space-sm">
+              In parallel, I led design initiatives to increase engagement—refreshing Grace’s look and feel and exploring ways to improve open rates.
+            </div>
+          </div>
+
+            <!--Self-Service-->
+            <div class="case-section">
+            <div class="case-section-sub-title top-space">
+              Expand Self-Services
+            </div>
+            <div class="case-description">
+              Using a combination of utterance analysis and MyChart message classification, our team identified the top administrative use cases to address. <b>Medication management rose to the top.</b>
+            </div>
+            <div class="case-description top-space-sm">
+              We broke it down into key tasks: medication refills, new medication requests, and alternative medication requests. The clinical team provided complex flow diagrams outlining how these scenarios were typically handled.
+            </div>
+            <div class="case-description top-space-sm">
+              I translated those flows into a more conversational experience—<b>simplifying without losing critical detail.</b> Through multiple rounds of iteration and clinical review, we arrived at a version that felt safe and patient-friendly.
+            </div>
+            </div>
+
+            <div class="case-image-sec">
+              <img
+                class="case-center-img"
+                src="img/grace/grace-med-flow.png"
+                alt="grace"
+              />
+              <div class="case-img-desc bottom-space">
+                Medication refill flow logic
+              </div>
+            </div>
+
+          <div class="case-section">
+            <div class="case-description top-space-sm">
+              Once aligned, I used the final flow to design high-fidelity mockups to guide engineering implementation.
+            </div>
+          </div>
+
+            <div class="case-image-sec">
+              <img
+                class="case-center-img-med"
+                src="img/grace/grace-med-mocks.png"
+                alt="grace"
+              />
+              <div class="case-img-desc bottom-space">
+                Medication refill high-fidelity mockup flow
+              </div>
+            </div>
+
+            <!--Redesign-->
+            <div class="case-section">
+            <div class="case-section-sub-title top-space">
+              Redesign Grace
+            </div>
+            <div class="case-description">
+              Redesigning Grace was a highly collaborative effort across design, product, and engineering—but it started with asking why.            
+            </div>
+            <div class="case-description top-space-sm">
+              Grace’s UI was limiting: <b>open rates were low, the interaction model was unclear, and the visual design felt outdated.</b> We knew a simple visual refresh wouldn’t be enough—we needed a clear north star to guide not just how Grace looked, but how it delivered value.
+            </div>
+            <div class="case-description top-space-sm">
+              To shape this direction, I conducted a <b>competitive analysis that helped us align on a tone</b> that felt both professional and approachable—a balance that felt right for healthcare.
+            </div>
+          </div>
+
+            <div class="case-image-sec">
+              <img
+                class="case-center-img"
+                src="img/grace/grace-axis.png"
+                alt="grace"
+              />
+              <div class="case-img-desc bottom-space">
+                Mapping chatbots along a tone and personality spectrum
+              </div>
+            </div>
+
+          <div class="case-section">
+            <div class="case-description top-space-sm">
+              With this direction in place, I facilitated a series of <b>working sessions to define the core patterns</b> of the experience: entry point, first-run flow, conversation layout, button behavior, pagination, and text input.
+            </div>
+          </div>
+
+            <div class="case-image-sec">
+              <img
+                class="case-center-img"
+                src="img/grace/grace-wireframe.png"
+                alt="grace"
+              />
+              <div class="case-img-desc bottom-space">
+                Basic wireframes to guide discussion on chatbot introductions              
+              </div>
+            </div>
+
+            <div class="case-section">
+            <div class="case-description top-space-sm">
+              As part of this vision, we also looked for opportunities to improve engagement. At the time, Grace had a <b>1% open rate</b>. During the competitive analysis, I identified a common pattern across high-performing chatbots: a floating shortcut menu that surfaced the bot’s value upfront.
+            </div>
+          </div>
+
+            <div class="case-image-sec">
+              <img
+                class="case-center-img"
+                src="img/grace/grace-shortcut.png"
+                alt="grace"
+              />
+              <div class="case-img-desc bottom-space">
+                Examples of floating shortcut menus contextual to MyChart pages
+              </div>
+            </div>
+            <div class="case-section">
+            <div class="case-description top-space-sm">
+              I designed and tested this feature with our team, giving patients easier access to Grace’s most useful actions. By year-end, <b>open rates climbed to 8%, and goal conversions increased significantly</b>—early signs that Grace was becoming not just more usable, but more valuable.            
+            </div>  
+            </div>  
+
+            <div class="case-image-sec">
+              <img
+                class="case-center-img"
+                src="img/grace/grace-comparison-1.png"
+                alt="grace"
+              />
+              <div class="case-img-desc bottom-space">
+                A more approachable introduction
+              </div>
+            </div>
+
+            <div class="case-image-sec">
+              <img
+                class="case-center-img"
+                src="img/grace/grace-comparison-3.png"
+                alt="grace"
+              />
+              <div class="case-img-desc bottom-space">
+                Maximizing our conversational space
+              </div>
+            </div>
+
+            <div class="case-image-sec">
+              <img
+                class="case-center-img"
+                src="img/grace/grace-comparison-2.png"
+                alt="grace"
+              />
+              <div class="case-img-desc bottom-space">
+                Visually cohesive and consistent
+              </div>
+            </div>
+
+            
+            <!--Launch-->
+            <div class="case-section">
+            <div class="case-section-sub-title top-space">
+              Launch Grace on MyChart
+            </div>
+            <div class="case-description">
+              We needed to meet patients where they send messages to their care team—directly within MyChart.
+            </div>
+            <div class="case-description top-space-sm">
+              In September 2022, we launched a pilot with select primary and specialty care clinics to validate Grace’s ability to offer self-service options and reduce the number of messages sent to care teams. The results were promising: <b>Grace deflected 22% of administrative messages and 8% of total MyChart messages.</b>
+            </div>
+            <div class="case-description top-space-sm">
+              With those results, we expanded Grace across all of Providence MyChart—bringing self-service support to more patients and easing the load on care teams system-wide.
+            </div>     
+            </div>       
+
+            <div class="case-image-sec">
+              <img
+                class="case-center-img"
+                src="img/grace/grace-on-mychart.png"
+                alt="grace"
+              />
+              <div class="case-img-desc bottom-space">
+                Grace on MyChart providing contextualized support
+              </div>
+            </div>
+
+
+            <!--Launch-->
+            <div class="case-section">
+            <div class="case-section-sub-title top-space">
+              Building a Scalable Design System
+            </div>
+            <div class="case-description">
+              Through out this journey, continuous documentation was key to its success. To support faster iterations and consistent experiences, I built the Grace Design System in Figma — defining styles, components, and interaction patterns.
+            </div>
+            <div class="case-description top-space-sm">
+              It brought clarity to a fragmented process and gave the team the structure to support more advanced capabilities over time.            
+            </div> 
+          </div>
+            
+            <div class="case-image-sec">
+              <img
+                class="case-center-img"
+                src="img/grace/grace-scale-design.png"
+                alt="grace"
+              />
+              <div class="case-img-desc bottom-space">
+                Using the design system to ensure consistency across platforms 
+              </div>
+            </div>
+            
+
+      </div>
+
+      <hr class="line-sep" />
+
+      <div class="case-section">
+        <div class="case-section-title">Key Learnings</div>
+        <div class="case-description">
+          <a class="bold">Balancing Product Goals with Design Vision:
+          </a> Product often prioritized growth metrics like monthly active users, while design pushed for long-term vision and experience quality. I learned the value of advocating for both—driving measurable impact in the short term while also shaping the north star experience. Design can (and should) be a source of innovation, not just refinement.
+        </div>
+        <div class="case-description">
+          <a class="bold">Using Frameworks and Design Tenets to Guide Ambiguity:</a> In the absence of clear data or research, I leaned on frameworks and design tenets to guide decisions. These helped align the team, justify design direction, and communicate intent—especially when navigating complexity or making tradeoffs.
+        </div>
+      </div>
+
+
+    <div class="thank-you">
+      <div class="thanks">Thank you for reading!</div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        Return to Top
+      </button>
+    </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="icons footer-icons">
+      <a href="mailto:untalan.ryan@gmail.com">
+        <i class="fas fa-envelope fa-2x ft-icons-1"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/ryan-untalan/" target="_blank">
+        <i class="fab fa-linkedin fa-2x ft-icons"></i>
+      </a>
+
+      <a href="https://github.com/ryuntalan" target="_blank">
+        <i class="fab fa-github fa-2x ft-icons"></i>
+      </a>
+      
+      <a href="https://dribbble.com/ryuntalan" target="_blank">
+        <i class="fab fa-dribbble fa-2x ft-icons"></i>
+      </a>
+    </div>
+    <div class="footer-text">
+      Coded by Ryan Untalan (2025)
+    </div>
+  </footer>
+  </body>
+</html>
