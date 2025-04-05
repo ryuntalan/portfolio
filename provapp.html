@@ -87,7 +87,7 @@
             <div class="hero-subtitle">
                 <img src=img/ryan-icon.png> 
                 <div class="bold">Ryan Untalan</div> 
-                <div>Mar. 20, 2025 <span>&#183;</span> 5 min</div>
+                <div>Apr. 4, 2025 <span>&#183;</span> 7 min</div>
             </div>
          </div>
          <img class= "hero-img" src="img/provapp/prov-hero.png"/>
@@ -100,13 +100,14 @@
         <div class="case-description">
           <b>Project Description:</b> 
           Patients often struggle to understand when and where to complete their lab tests, resulting in high clinic call volumes and delays in care. We integrated Labcorp into the Providence mobile app to streamline the lab booking experience and support timely follow-through.
+        </div>
         <div class="case-description">
           <b>Role:</b> 
           Lead Product Designer
         </div>
 
         <div class="case-description">
-          <b>Timeframe:</b> 
+          <b>Duration:</b> 
           8 months
         </div>
 
@@ -257,31 +258,243 @@
       <hr class="line-sep" />
 
       <div class="case-section">
-        <div class="case-section-title">Section In Progress</div>
+        <div class="case-section-title">The Journey</div>
+      </div>
+
+      <!--Context-->
+
+      <div class="case-section">
+        <div class="case-section-sub-title">
+          Setting the Context
+        </div>
+        <div class="case-description">
+          The path to launch was anything but linear. It involved collaborating with our mobile app vendor, navigating Labcorp’s capabilities, evolving priorities, technical constraints, and many design iterations.      
+        </div> 
+      </div>
+
+
+      <!--Praia-->
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          Praia - Our Mobile App Vendor
+        </div>
+        <div class="case-description">
+          The Providence mobile app is built on Praia’s consumer health platform. Praia was spun out of the Providence Digital Innovation Group in 2024. 
+        </div>
+        <div class="case-description">
+          As both a customer and close partner, we help define the product and design specifications for new features and then submit them to Praia for implementation.
+        </div>
+      </div>
+
+
+      <div class="case-image-sec">
+        <img
+          class="case-center-img"
+          src="img/provapp/prov-praia.png"
+          alt="praia article"
+        />
+        <div class="case-img-desc bottom-space">
+          News article announcing the launch of Praia
+        </div>
+      </div>
+
+      <!--Labcorp-->
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          Labcorp - Our Ecosystem Partner
+        </div>
+        <div class="case-description">
+          Healthcare is a fragmented industry. Patients often interact with multiple hospitals, doctors, pharmacies, and labs.        
+        </div>
+        <div class="case-description">
+          To close these gaps, Providence is expanding its digital ecosystem through strategic partnerships with organizations that provide valuable services to patients.
+        </div>
+        <div class="case-description">
+          In April 2024, our partner LabCorp shared that they were building a lab scheduling API — an opportunity that aligned with our goal of improving the lab experience in the Providence app.
+        </div>
       </div>
 
       <div class="case-image-sec">
         <img
-          class="case-center-img-med"
-          src="img/provapp/prov-iteration.png"
-          alt="iterations"
+          class="case-center-img"
+          src="img/provapp/prov-labcorp.png"
+          alt="labcorp appointment"
         />
         <div class="case-img-desc bottom-space">
-        Many pivots, iterations, and design reviews when into refining this experience        
+          Labcorp's lab search experience
+        </div>
+      </div>
+
+      <!--Challenge-->
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          The Lab Booking Challenge
+        </div>
+        <div class="case-description">
+          Patients often <b>lack clarity on when labs are ordered, which tests are needed, and where to go.</b>
+        </div>
+        <div class="case-description">
+          Roughly 10% of the time, doctors send lab orders to different agencies like LabCorp or Quest Diagnostics.
+        </div>
+        <div class="case-description bottom-space">
+          As a result, patients may miss labs, make duplicate visits, or arrive without an order on file. This leads to increased clinic calls and delays in care.
+        </div>
+      </div>
+
+      <!--Defining Scope-->
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          Defining Success and Scope
+        </div>
+        <div class="case-description">
+          Our <b>primary key performance indicator was lab completion rate</b>, which is the percentage of patients who complete their lab orders within a specific timeframe. We tracked both 7-day and 30-day completion to measure short- and longer-term follow-through.
+        </div>
+        <div class="case-description">
+          To support this goal, we scoped the MVP experience around two key actions: notifying the patient of new lab orders and making it easy to schedule. Since Providence works with <b>three lab agencies, we needed to create an experience that scales across each one.</b>
         </div>
       </div>
 
       <div class="case-image-sec">
         <img
           class="case-center-img-med"
-          src="img/provapp/prov-end-to-end.png"
-          alt="grace"
+          src="img/provapp/prov-scale.png"
+          alt="design tenets"
         />
         <div class="case-img-desc bottom-space">
-        Happy path   
+          Documenting requirements and rationale alongside mockups
         </div>
       </div>
 
+
+      <!--Designing Within Constraints-->
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          Designing Within Constraints
+        </div>
+        <div class="case-description">
+          One of our early challenges was the <b>uncertainty around Labcorp’s scheduling API.</b> While they confirmed it was in development, we had no insight into what data it would require or return.
+        </div>
+        <div class="case-description">
+          Given the unclear timeline and our target to launch by the end of June, we needed to move forward with a solution that worked within existing constraints. <b>Early designs focused on a deep link experience,</b> directing patients to each lab agency’s scheduling page.
+        </div>
+        <div class="case-description">
+          Despite the uncertainty, I still wanted to <b>design for the ideal integrated experience.</b> I created early concepts based on Labcorp’s existing scheduling flow so we’d be ready when their API became available.        </div>
+      </div>
+
+      <div class="case-image-sec">
+        <img
+          class="case-center-img-med"
+          src="img/provapp/prov-constraints.png"
+          alt="praia article"
+        />
+        <div class="case-img-desc bottom-space">
+          Many iterations shaped by design feedback and clinical input.
+        </div>
+      </div>
+
+      <!--Pivot-->
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          MVP Pivot
+        </div>
+        <div class="case-description">
+          In mid-May, I presented designs for an ideal scheduling experience that would eventually use LabCorp’s API. I advocated for this approach as the best way to help patients complete their labs. 
+        </div>
+        <div class="case-description bottom-space">
+          Although implementing the API would delay launch, our VP of Product chose to move forward with it as part of the MVP. I shifted focus to support that direction and worked with product to prepare for handoff.
+        </div>
+      </div>
+
+      <div class="case-image-sec">
+        <img
+          class="case-center-img"
+          src="img/provapp/prov-pivot.png"
+          alt="praia article"
+        />
+        <div class="case-img-desc bottom-space">
+          Commit to using the Labcorp scheduling API for MVP
+        </div>
+      </div>      
+
+      <!--Handoff-->
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          Design Handoff to Praia
+        </div>
+        <div class="case-description">
+          Because this was a net-new feature, implementation required Praia’s involvement. I worked closely with the Providence app product owner to define design specs and use cases.
+        </div>
+      </div>   
+      
+      <div class="case-image-sec">
+        <img
+          class="case-center-img"
+          src="img/provapp/prov-handoff.png"
+          alt="praia article"
+        />
+        <div class="case-img-desc bottom-space">
+          The end-to-end happy path flow
+        </div>
+      </div>    
+
+
+
+      <!--Bug-->
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          Bug Bashes and UX Desk Checks
+        </div>
+        <div class="case-description bottom-space">
+          I joined multiple rounds of bug bashes to identify gaps and ensure the experience met expectations. Early rounds surfaced blocking issues that affected core flows and needed to be resolved before launch. I provided design direction and clarified specs to help maintain a high-quality patient experience.
+        </div>
+      </div>      
+      
+      <!--From Launch to Results-->
+      <div class="case-section">
+        <div class="case-section-sub-title top-space">
+          From Launch to Results
+        </div>
+        <div class="case-description">
+          We launched the lab booking experience and Labcorp integration on November 21, 2024 - a major milestone for the Providence app as its first ecosystem partner integration.
+        </div>
+        <div class="case-description">
+          Post-launch, we saw a notable improvement in lab completion rates. Patients using the <b>Providence app had a 58% 30-day completion rate</b>, compared to 37% for those using MyChart.
+        </div>
+        <div class="case-description">
+          We also saw the highest engagement of any NBA card at a 39.2% click-through rate.
+        </div>
+      </div>    
+
+
+      <div class="case-image-sec">
+        <img
+          class="case-center-img"
+          src="img/provapp/prov-launch.png"
+          alt="providence app labcorp integration scheduling view"
+        />
+        <div class="case-img-desc bottom-space">
+          Labcorp integration outcome
+        </div>
+      </div>    
+      
+      <hr class="line-sep" />
+
+      <!--Learnings-->      
+      <div class="case-section">
+        <div class="case-section-title">Key Learnings</div>
+        <div class="case-description">
+          <a class="bold">
+            Document your sad paths and edge cases:
+          </a> 
+          Leading with the happy path helps drive clarity and momentum, but supporting end-to-end flows means planning for what happens when things don’t go as expected. What if a patient has location services turned off? What if they miss their appointment? Defining these scenarios early helps create a more refined experience.
+        </div>
+        <div class="case-description">
+          <a class="bold">
+            Balancing deadlines with impact:
+          </a> 
+          Meeting deadlines is paramount. However, delivering an experience that best helps patients can override a target date. In this project, we chose to delay launch to include the LabCorp integration, which made the feature significantly more useful. It was a reminder that pushing back a release can be the right call when it leads to better outcomes for patients and care teams.
+        </div>
+      </div>      
 
 
 
