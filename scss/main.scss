@@ -146,6 +146,14 @@ h3 {
   justify-content: left;
 }
 
+.play-heading {
+  margin: 6rem 0 4rem;
+  font-size: 2.6em;
+  font-weight: 300;
+  justify-content: center;
+  text-align: center;
+}
+
 .msg-heading {
   color: var(--color-text);
   line-height: 32px;
@@ -165,6 +173,35 @@ h3 {
   display: flex;
   flex-direction: column;
   margin: auto;
+}
+
+// Video container styles
+.video-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto ;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.vimeo-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  padding-bottom: 45%; // 16:9 aspect ratio
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.vimeo-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: inset(4% 0 0 0); /* Crop 5% from the top */
+  border-radius: 8px;
 }
 
 // arrow scroll
