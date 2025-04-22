@@ -28,12 +28,7 @@
     width: 825px;
   }
 
-  .hi-heading {
-    display: flex;
-    margin-top: 3rem;
-    width: 800px;
-    margin: auto;
-  }
+
 
   .msg-heading {
     display: flex;
@@ -229,11 +224,13 @@
 
   .hi-heading {
     display: flex;
-    margin-top: 3rem;
-    justify-content: center;
-    margin: auto;
+    font-size: 3rem;
   }
 
+  .hi-subheading {
+    font-size: 1.1rem;
+  }
+  
   .msg-heading {
     display: flex;
     justify-content: center;
@@ -487,8 +484,14 @@
   .hi-heading {
     display: flex;
     font-size: 1.8rem;
-    margin-top: 1.5rem;
+    margin: 1.8rem 0 .5rem;
     justify-content: center;
+  }
+
+  .hi-subheading {
+    font-size: 1.1rem;
+    line-height: 1.5;;
+    margin: 0;
   }
 
   .msg-heading {
