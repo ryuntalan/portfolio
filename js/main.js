@@ -1,4 +1,3 @@
-
 // scroll reveal
 window.sr = ScrollReveal();
 
@@ -77,32 +76,24 @@ function topFunction() {
 }
 
 //dark theme switch
-const toggleSwitch = document.querySelector(
-  '.theme-switch input[type="checkbox"]'
-);
+const themeToggleBtn = document.getElementById("theme-toggle");
 
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
-  } else {
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+  if (currentTheme === "dark") {
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
   }
 }
 
-toggleSwitch.addEventListener("change", switchTheme, false);
+themeToggleBtn.addEventListener("click", toggleTheme);
 
-const currentTheme = localStorage.getItem("theme")
-  ? localStorage.getItem("theme")
-  : null;
-
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
-
-  if (currentTheme === "dark") {
-    toggleSwitch.checked = true;
-  }
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  document.documentElement.setAttribute("data-theme", savedTheme);
 }
 
 //SLIDESHOW

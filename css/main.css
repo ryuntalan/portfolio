@@ -82,9 +82,9 @@ li a {
   display: block;
   color: var(--color-text);
   text-align: center;
-  padding: 20px 18px;
+  padding: 24px 20px 20px;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
   transition: all 0.3s ease-out;
 }
 li a.contact {
@@ -117,8 +117,8 @@ li a:hover {
 }
 
 .nav-logo {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-top: 6px;
 }
 
@@ -153,12 +153,12 @@ h3.sm-heading {
 }
 
 .hi-heading {
-  margin: 5rem 0 0;
-  font-size: 4rem;
-  line-height: 1.2;
-  font-weight: 600;
-  justify-content: center;
-  text-align: center;
+  margin: 2rem 0 0;
+  font-size: 1.5rem;
+  line-height: 1.75;
+  font-weight: 400;
+  justify-content: left;
+  text-align: left;
 }
 
 .hi-subheading {
@@ -194,8 +194,9 @@ h3.sm-heading {
 .video-container {
   width: 100%;
   max-width: 1000px;
-  margin: 10px auto;
-  padding: 10px 0px;
+  margin: auto;
+  margin-top: -40px;
+  padding: 0px;
   display: flex;
   justify-content: center;
   border-radius: 8px;
@@ -216,6 +217,24 @@ h3.sm-heading {
   width: 100%;
   height: 100%;
   clip-path: inset(7.1% 0 0 0); /* Crop 5% from the top - adjust or remove this to show more of the video */
+  border-radius: 8px;
+}
+
+.youtube-wrapper {
+  position: relative;
+  margin-top: 56px;
+  width: 100%;
+  max-width: 680px;
+  padding-bottom: 48%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.youtube-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -990,8 +1009,7 @@ input:checked + .slider:before {
 
 .demo-btn {
   border: none;
-  padding: 15px 30px;
-  box-shadow: 0px 0px 2px rgba(50, 50, 50, 0.14), 0px 2px 2px rgba(50, 50, 50, 0.12), 0px 1px 3px rgba(50, 50, 50, 0.2);
+  padding: 16px 32px;
   border-radius: 8px;
   font-size: 16px;
   background-color: var(--color-button);
@@ -999,6 +1017,10 @@ input:checked + .slider:before {
 .demo-btn:hover {
   background-color: var(--button-hover);
   cursor: pointer;
+}
+
+.demo-btn-spacing {
+  padding: 2rem 0;
 }
 
 .demo-buttons {
@@ -2373,6 +2395,105 @@ input:checked + .slider:before {
   .yt-video {
     height: 240px;
   }
+}
+.theme-toggle-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+  padding: 0;
+}
+
+.theme-toggle-btn .theme-icon {
+  width: 14px;
+  height: 14px;
+  display: block;
+  background: url("../img/moon.svg") center/contain no-repeat;
+}
+
+html[data-theme=dark] .theme-toggle-btn {
+  background: #0073ff;
+}
+
+html[data-theme=dark] .theme-toggle-btn .theme-icon {
+  background: url("../img/sun.svg") center/contain no-repeat;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 2px;
+  max-width: 1000px;
+  margin: 4.5rem auto;
+}
+
+.showcase-item {
+  position: relative;
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.showcase-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: none;
+  border-radius: inherit;
+  transition: box-shadow 0.3s;
+  z-index: 2;
+}
+.showcase-item:hover::after, .showcase-item:focus::after {
+  box-shadow: inset 0 0 0 2px var(--color-text);
+}
+
+.showcase-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.showcase-item.small {
+  grid-column: span 1;
+  grid-row: span 1;
+  min-height: 150px;
+}
+
+.showcase-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+  min-height: 320px;
+}
+
+.showcase-item iframe,
+.showcase-item .vimeo-crop {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  object-fit: cover;
+  transform: scale(1.05);
+  transform-origin: center center;
+}
+
+.showcase-iframe iframe,
+.showcase-iframe .vimeo-crop {
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=main.css.map */

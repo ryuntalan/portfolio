@@ -39,7 +39,7 @@
     <title>Ryan Untalan</title>
     <meta
       name="description"
-      content="I’m a product designer with a background in psychology and web development. I specialize in user research and interaction design"
+      content="I'm a product designer with a background in psychology and web development. I specialize in user research and interaction design"
     />
     <meta
       name="keywords"
@@ -63,20 +63,9 @@
         <ul class="menu-nav">
           <div class="nav-btn">
             <li class="nav-item dark-toggle">
-              <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                  <input type="checkbox" id="checkbox" />
-                  <div class="slider round">
-                    <img class="sun-icons" src="img/sun.svg" />
-                    <img class="moon-icons" src="img/moon.svg" />
-                  </div>
-                </label>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="/resources/Resume.pdf" target="_blank" class="nav-link">
-                Resume
-              </a>
+              <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+                <span class="theme-icon"></span>
+              </button>
             </li>
             
 
@@ -86,18 +75,6 @@
               </a>
             </li>
 
-            <li class="nav-item">
-              <a href="/play.html" class="nav-link">
-                Play
-              </a>
-            </li>
-
-        
-            <li class="nav-item">
-              <a href="#use-cases" class="nav-link">
-                Work
-              </a>
-            </li>
           </div>
           <div class="left-logo">
           <li class="nav-item">
@@ -112,72 +89,50 @@
     <main>
       <div class="home-greeting">
         <div class="home-format">
-          <h1 class="hi-heading">Product designer <br>who delivers with care</h1>
-          <h3 class="hi-subheading">I bring a background in psychology and front-end thinking to every experience</h3>
+          <h1 class="hi-heading">Product designer with a background in psychology and web development. <br>Currently building products like Ante.</h1>
         </div>
       </div>
 
-      <div id="use-cases" class="portfolio">
+      <!-- Use Cases Showcase Grid -->
+      <section class="showcase-grid">
+        <a href="/grace.html" class="showcase-item large"><img src="img/grace-thumbnail.png" alt="Grace" /></a>
 
-        <div class="container item-left">
-          <a
-            href="/grace.html"
-          >
-            <img
-              class="project light-border"
-              src="img/grace-thumb.png" 
-              alt="Grace chatbot project"
-            />
-          </a>
-          <div class=thumb-info>
-            <div class=thumb-title>Grace Smart Assistant</div>
-            <div class=thumb-description>Help patients navigate their health system and access care</div>
-          </div>
-        </div>
+        <a href="/jupyter.html" class="showcase-item small"><img src="img/jupyter-thumb.png" alt="Jupyter" /></a>
 
-        <div class="container item-right">
-          <a href="/jupyter.html">
-            <img
-              class="project light-border"
-              src="img/pj-thumb.png"
-              alt="JupyterLab extension"
-            />
-          </a>
-          <div class=thumb-info>
-            <div class=thumb-title>JupyterLab Tabular Data Editor</div>
-            <div class=thumb-description>Organize and edit your data side-by-side with Jupyter Notebooks</div>
-          </div>
-        </div>
+        <a href="/ante.html" class="showcase-item small"><img src="img/ante-thumbnail.png" alt="Ante" /></a>
 
-        <div class="container item-left second-row">
-          <a href="/sonder.html">
-            <img
-              class="project dark-border"
-              src="img/sonder-thumb.png"
-              alt="sonder"
-            />
-          </a>
-          <div class=thumb-info>
-            <div class=thumb-title>Sonder</div>
-            <div class=thumb-description>Discover common ground</div>
-          </div>
-        </div>
+        <!-- Ryu -->
+        <a href="/ryu.html" class="showcase-item small showcase-iframe">
+          <iframe class="vimeo-crop" src="https://player.vimeo.com/video/1078565998?background=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p" frameborder="0" allowfullscreen></iframe>
+        </a>
 
-    
-        <div class="container item-right second-row">
-          <a href="/provapp.html">
-            <img
-              class="project dark-border"
-              src="img/prov-thumb.png"
-              alt="providence app labcorp partnership project"
-            />
-          </a>
-          <div class=thumb-info>
-            <div class=thumb-title>Providence App Labcorp Integration</div>
-            <div class=thumb-description>Book a lab appointment though the Providence App</div>
-          </div>
-        </div>
-      </div>
+        <!-- Solstice -->
+        <a href="/solstice.html" class="showcase-item small showcase-iframe">
+          <iframe class="vimeo-crop" src="https://player.vimeo.com/video/1098426180?background=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p" frameborder="0" allowfullscreen></iframe>
+        </a>
+
+        <!-- Pluto -->
+        <a href="/pluto.html" class="showcase-item small showcase-iframe" rel="noopener noreferrer">
+          <iframe class="vimeo-crop" src="https://player.vimeo.com/video/1077341664?background=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p" frameborder="0" allowfullscreen></iframe>
+        </a>
+
+        <!-- Stickers -->
+        <a href="/emblem.html" class="showcase-item small showcase-iframe">
+          <iframe class="vimeo-crop" src="https://player.vimeo.com/video/1077500837?background=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p" frameborder="0" allowfullscreen></iframe>
+        </a>
+
+        <!-- Bookshelf -->
+        <a href="/bookshelf.html" class="showcase-item small showcase-iframe">
+          <iframe class="vimeo-crop" src="https://player.vimeo.com/video/1077341515?background=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p" frameborder="0" allowfullscreen></iframe>
+        </a>
+
+        <!-- Noodles -->
+        <a href="/noodle.html" class="showcase-item small showcase-iframe" rel="noopener noreferrer">
+          <iframe class="vimeo-crop" src="https://player.vimeo.com/video/1077341384?background=1&autoplay=1&loop=1&autopause=0&muted=1&quality=1080p" frameborder="0" allowfullscreen></iframe>
+        </a>
+
+      </section>
+      
     </main>
     <footer class="footer">
       <div class="icons footer-icons">
