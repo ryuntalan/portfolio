@@ -224,7 +224,7 @@
 
   .hi-heading {
     display: flex;
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   .hi-subheading {
@@ -483,8 +483,8 @@
 
   .hi-heading {
     display: flex;
-    font-size: 1.8rem;
-    margin: 1.8rem 0 .5rem;
+    font-size: 1.2rem;
+    margin: 2rem 0 0rem;
     justify-content: center;
   }
 
@@ -923,5 +923,20 @@
 
   .yt-video{
     height: 240px;
+  }
+
+  // Showcase grid: single column on mobile
+  body .showcase-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    width: 100%;
+  }
+
+  // Fix: All showcase items span 1 column/row on mobile
+  body .showcase-grid .showcase-item.large,
+  body .showcase-grid .showcase-item.small {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+    min-height: 150px;
   }
 }
