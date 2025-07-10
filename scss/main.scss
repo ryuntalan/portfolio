@@ -158,6 +158,15 @@ h3 {
 
 }
 
+.header-link {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+}
+
 
 .msg-heading {
   color: var(--color-text);

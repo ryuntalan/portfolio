@@ -170,6 +170,15 @@ h3.sm-heading {
   text-align: center;
 }
 
+.header-link {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+}
+
 .msg-heading {
   color: var(--color-text);
   line-height: 32px;
